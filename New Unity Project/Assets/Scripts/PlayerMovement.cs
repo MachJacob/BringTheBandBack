@@ -8,8 +8,7 @@ public class PlayerMovement : MonoBehaviour
     private Vector3 vel;
     public float moveSpeed;
     public float smoothTime;
-    public float jumpForce;
-    private bool isGrounded;
+    public float jumpVel;
 
     [SerializeField] LayerMask platformLayerMask;
     // Start is called before the first frame update
@@ -19,7 +18,7 @@ public class PlayerMovement : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         float moveVel = 0;
         if (Input.GetKey(KeyCode.A))
@@ -37,8 +36,7 @@ public class PlayerMovement : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space) && IsGrounded())
         {
-            rb.AddForce(Vector2.up * jumpForce);
-            isGrounded = false;
+            rb.velocity = new Vector2(rb.velocity.x, jumpVel);
         }
     }
 
