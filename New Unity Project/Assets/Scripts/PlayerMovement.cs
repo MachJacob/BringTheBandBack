@@ -20,21 +20,13 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        float moveVel = 0;
-        if (Input.GetKey(KeyCode.A))
-        {
-            moveVel = -1;
-        }
-        if (Input.GetKey(KeyCode.D))
-        {
-            moveVel = 1;
-        }
+        float moveVel = Input.GetAxis("Horizontal");
 
         Vector2 targetVel = new Vector2(moveVel * moveSpeed, rb.velocity.y);
 
         rb.velocity = Vector3.SmoothDamp(rb.velocity, targetVel, ref vel, smoothTime);
 
-        if (Input.GetKeyDown(KeyCode.Space) && IsGrounded())
+        if (Input.GetAxis("Jump") > 0 && IsGrounded())
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpVel);
         }
