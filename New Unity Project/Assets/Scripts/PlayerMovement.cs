@@ -6,6 +6,7 @@ public class PlayerMovement : MonoBehaviour
 {
     private Rigidbody2D rb;
     private Vector3 vel;
+    private SpriteRenderer spr;
     public float moveSpeed;
     public float smoothTime;
     public float jumpVel;
@@ -15,6 +16,7 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        spr = GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -29,6 +31,15 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetAxis("Jump") > 0 && IsGrounded())
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpVel);
+        }
+
+        if (rb.velocity.x > 0.1)
+        {
+            spr.flipX = false;
+        }
+        else if (rb.velocity.x < -0.1)
+        {
+            spr.flipX = true;
         }
     }
 

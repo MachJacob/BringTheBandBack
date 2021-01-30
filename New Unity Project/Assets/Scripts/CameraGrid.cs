@@ -15,7 +15,7 @@ public class CameraGrid : MonoBehaviour
         
     }
 
-    private void OnTriggerExit2D(Collider2D collision)  //very basic, probably needs to be improved
+    private void OnTriggerExit2D(Collider2D collision)  //very bad, definitely needs to be improved
     {
         int multX = 1;
         if (collision.transform.position.x < transform.position.x)
