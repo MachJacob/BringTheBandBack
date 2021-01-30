@@ -9,6 +9,8 @@ public class Chase : MonoBehaviour
     public Transform playerTransform;
 
     public float moveSpeed = 0.1f;
+    public float moveCooldown;
+    public float timer;
     public float rotationSpeed = 5;
 
     public float maxDistance = 10.0f;
@@ -20,26 +22,20 @@ public class Chase : MonoBehaviour
     void Start()
     {
         rb = this.GetComponent<Rigidbody2D>();
+        moveCooldown = 3f;
+        timer = moveCooldown;
     }
-
-    // Update is called once per frame
     void FixedUpdate()
     {
-        float distance = Vector3.Distance(transform.position, playerTransform.position);
-
-        if (distance >= minDistance)
+        if (timer > 0)
         {
-            Vector3 moveForce = playerTransform.transform.position - transform.position;
-            rb.MovePosition(Vector2.MoveTowards(transform.position, playerTransform.transform.position * Vector2.right, moveSpeed * Time.deltaTime));
-            moveForce.Normalize();
-            rb.AddForce(moveForce * moveSpeed);
+            timer -= Time.deltaTime;
         }
-
-        if (distance <= maxDistance)
+        if (timer <= 0)
         {
-            //Do something like a long ranged attack maybe? idk arrow shot or something
+            ChaseFunction();
+            timer = moveCooldown;
         }
-
 
         //transform.LookAt(playerTransform);
 
@@ -66,8 +62,23 @@ public class Chase : MonoBehaviour
         //    //moveForce.Normalize();
         //    //rb.AddForce(moveForce * moveSpeed);
         //}
+    }
 
+    public void ChaseFunction()
+    {
+        float distance = Vector3.Distance(transform.position, playerTransform.position);
 
+        if (distance >= minDistance)
+        {
+            Vector3 moveForce = playerTransform.transform.position - transform.position;
+            rb.MovePosition(Vector2.MoveTowards(transform.position, playerTransform.transform.position * Vector2.right, moveSpeed * Time.deltaTime));
+            moveForce.Normalize();
+            rb.AddForce(moveForce * moveSpeed);
+        }
 
+        else if (distance <= maxDistance)
+        {
+            //Do something like a long ranged attack maybe? idk arrow shot or something
+        }
     }
 }
