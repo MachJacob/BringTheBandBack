@@ -86,6 +86,7 @@ public class PlayerMovement : MonoBehaviour
             if(playerVelocity.y > 10) { playerVelocity.y = 10; }
             Debug.Log(playerVelocity.y);
             land.setParameterByName("downVelocity", playerVelocity.y);
+            GetComponent<Band>().SetBandVel(playerVelocity.y);
 
             inAir = false;
             jump.setParameterByName("jumpState", 0);
