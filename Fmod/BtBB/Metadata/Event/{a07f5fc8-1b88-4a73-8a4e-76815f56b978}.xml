@@ -154,7 +154,7 @@
 	</object>
 	<object class="EventMixerGroup" id="{fcf83730-5cda-4067-a197-4aff49fc6f42}">
 		<property name="volume">
-			<value>-6.5</value>
+			<value>-5.5</value>
 		</property>
 		<property name="name">
 			<value>Audio 2</value>
@@ -176,6 +176,9 @@
 		<property name="start">
 			<value>1</value>
 		</property>
+		<property name="startOffset">
+			<value>6.5</value>
+		</property>
 		<relationship name="modulators">
 			<destination>{6f480496-468f-4ae8-ae0c-d656fd7e7454}</destination>
 		</relationship>
@@ -185,7 +188,7 @@
 	</object>
 	<object class="EventMixerGroup" id="{2c782633-ae74-47e0-9083-cb6a238af2ff}">
 		<property name="volume">
-			<value>-10</value>
+			<value>3.5</value>
 		</property>
 		<property name="name">
 			<value>Audio 3</value>
