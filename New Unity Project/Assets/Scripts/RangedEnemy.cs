@@ -6,12 +6,10 @@ public class RangedEnemy : MonoBehaviour
 {
     //private GameObject rangedObject;
     public GameObject playersHealth;
-    public float damage = 20.0f;
+    public float damage = 10.0f;
 
     public GameObject[] rangedGameobject;
     private Transform[] exitPoints;
-
-    protected Rigidbody2D RangedRB;
 
     private float speed;
 
@@ -26,7 +24,7 @@ public class RangedEnemy : MonoBehaviour
         //playersHealth = GameObject.FindWithTag("Player");
         //RangedRB = GetComponent<Rigidbody2D>();
 
-        fireRate = 1f;
+        fireRate = 5f;
         nextFire = Time.deltaTime;
     }
     public void Shoot()

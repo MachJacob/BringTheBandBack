@@ -95,6 +95,9 @@
 		<property name="length">
 			<value>0.1875</value>
 		</property>
+		<property name="pitch">
+			<value>-21</value>
+		</property>
 		<relationship name="sounds">
 			<destination>{7ddc8c19-9dda-4f47-b5cd-b487ad42c862}</destination>
 			<destination>{f5d87335-d11e-44ae-b59d-7c24a171e1f3}</destination>
@@ -162,6 +165,7 @@
 		<relationship name="effects">
 			<destination>{e370e344-2644-40dd-bb99-23ac2e27cb36}</destination>
 			<destination>{752cd0a0-978e-4f63-b133-b595bda29662}</destination>
+			<destination>{790cad72-1295-49d9-adc6-b61e30d679a6}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{d8f605d3-d490-47ee-b8ff-d6454e97ffce}" />
@@ -178,4 +182,12 @@
 		</property>
 	</object>
 	<object class="MixerBusFader" id="{752cd0a0-978e-4f63-b133-b595bda29662}" />
+	<object class="FlangerEffect" id="{790cad72-1295-49d9-adc6-b61e30d679a6}">
+		<property name="rate">
+			<value>20</value>
+		</property>
+		<property name="mix">
+			<value>74</value>
+		</property>
+	</object>
 </objects>
