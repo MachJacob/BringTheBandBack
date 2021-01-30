@@ -19,6 +19,8 @@ public class RangedEnemy : MonoBehaviour
     private float fireRate;
     private float nextFire;
 
+    FMOD.Studio.EventInstance spit;
+
     void Start()
     {
         //playersHealth = GameObject.FindWithTag("Player");
@@ -26,6 +28,8 @@ public class RangedEnemy : MonoBehaviour
 
         fireRate = 5f;
         nextFire = Time.deltaTime;
+
+        spit = FMODUnity.RuntimeManager.CreateInstance("event:/Enemy2/Attack");
     }
     public void Shoot()
     {
@@ -38,6 +42,8 @@ public class RangedEnemy : MonoBehaviour
         {
             Instantiate(bullet, transform.position, Quaternion.identity);
             nextFire = Time.time + fireRate;
+
+            spit.start();
         }
 
     }
