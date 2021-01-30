@@ -17,6 +17,7 @@ public class PlayerMovement : MonoBehaviour
 
     FMOD.Studio.EventInstance footstep;
     FMOD.Studio.EventInstance jump;
+    FMOD.Studio.EventInstance music;
 
     public GameObject drumStick; 
     public GameObject cymbol;
@@ -31,6 +32,7 @@ public class PlayerMovement : MonoBehaviour
         //Fmod Instances
         footstep = FMODUnity.RuntimeManager.CreateInstance("event:/Player/Footsteps"); 
         jump = FMODUnity.RuntimeManager.CreateInstance("event:/Player/Jump");
+        music = FMODUnity.RuntimeManager.CreateInstance("event:/Music/Music");
         //Fmod Parameters
         jump.setParameterByName("jumpState", 1);
     }

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{a841148d-3732-4383-9e6b-654b613d3a60}">
+		<property name="assetPath">
+			<value>Sax Jam.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>33.040408163265305</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{b9f2c506-ec67-4e18-883c-361cd858d0ee}</destination>
+		</relationship>
+	</object>
+</objects>
