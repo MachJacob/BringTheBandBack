@@ -8,6 +8,7 @@ public class MeleeEnemy : Enemies
     public GameObject hitObject;
 
     public float damage = 20.0f;
+    private float minAttackDistance;
 
     FMOD.Studio.EventInstance attack;
 

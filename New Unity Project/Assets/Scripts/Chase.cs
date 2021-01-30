@@ -8,6 +8,8 @@ public class Chase : MonoBehaviour
     [SerializeField]
     public Transform playerTransform;
 
+    public GameObject enemyShooter;
+
     public float moveSpeed = 0.1f;
     public float moveCooldown;
     public float timer;
@@ -52,9 +54,9 @@ public class Chase : MonoBehaviour
             rb.AddForce(moveForce * moveSpeed);
         }
 
-        else if (distance <= maxDistance)
+        if (distance >= maxDistance)
         {
-            //Do something like a long ranged attack maybe? idk arrow shot or something
+            enemyShooter.GetComponent<RangedEnemy>().Shoot();
         }
     }
 }
