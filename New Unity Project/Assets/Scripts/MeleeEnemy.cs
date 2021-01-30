@@ -9,9 +9,13 @@ public class MeleeEnemy : Enemies
 
     public float damage = 20.0f;
 
+    FMOD.Studio.EventInstance attack;
+
     void Start()
     {
         playersHealth = GameObject.FindWithTag("Player");
+
+        attack = FMODUnity.RuntimeManager.CreateInstance("event:/Enemy/Eat");
     }
 
     public void OnCollisionEnter2D(Collision2D collision)
@@ -20,6 +24,9 @@ public class MeleeEnemy : Enemies
         {
             Hit();
             //collision.gameObject.GetComponent<Player>().DealDamage(damage);
+
+            attack.setParameterByName("Eat", 0);
+            attack.start();
         }
     }
 
