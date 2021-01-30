@@ -25,6 +25,22 @@ public class Chase : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
+        float distance = Vector3.Distance(transform.position, playerTransform.position);
+
+        if (distance >= minDistance)
+        {
+            Vector3 moveForce = playerTransform.transform.position - transform.position;
+            rb.MovePosition(Vector2.MoveTowards(transform.position, playerTransform.transform.position * Vector2.right, moveSpeed * Time.deltaTime));
+            moveForce.Normalize();
+            rb.AddForce(moveForce * moveSpeed);
+        }
+
+        if (distance <= maxDistance)
+        {
+            //Do something like a long ranged attack maybe? idk arrow shot or something
+        }
+
+
         //transform.LookAt(playerTransform);
 
         //if(Vector2.Distance(transform.position , playerTransform.position) >= minDistance)
@@ -51,26 +67,7 @@ public class Chase : MonoBehaviour
         //    //rb.AddForce(moveForce * moveSpeed);
         //}
 
-        float distance = Vector3.Distance(transform.position, playerTransform.position);
 
-        if (distance >= minDistance)
-        {
-            Vector3 moveForce = playerTransform.transform.position - transform.position;
-            rb.MovePosition(Vector2.MoveTowards(transform.position, playerTransform.transform.position * Vector2.right, moveSpeed * Time.deltaTime));
-            moveForce.Normalize();
-            rb.AddForce(moveForce * moveSpeed);
-        }
-
-        if (distance <= maxDistance)
-        {
-            //Do something like a long ranged attack maybe? idk arrow shot or something
-        }
-
-        //if(rb.rotation == 90f)
-        //{
-        //    rb.rotation = 0f;
-        //    rb.constraints = RigidbodyConstraints2D.FreezeRotation;
-        //}
 
     }
 }
