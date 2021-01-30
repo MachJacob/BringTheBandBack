@@ -4,14 +4,21 @@ using UnityEngine;
 
 public class Cymbol : MonoBehaviour
 {
+    FMOD.Studio.EventInstance cymbol;
+
     void Start()
     {
-        //sticks = FMODUnity.RuntimeManager.CreateInstance("event:/Drums/Sticks");
-        //sticks.start();
+        cymbol = FMODUnity.RuntimeManager.CreateInstance("event:/Drums/Cymbal");
+        cymbol.setParameterByName("CymbalCollision", 0);
+        cymbol.start();
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
         Destroy(gameObject);
+
+        cymbol.setParameterByName("CymbalCollision", 1);
+        cymbol.start();
+
         //sticks.setParameterByName("SticksContact", 1);
 
         //if (collision.gameObject.CompareTag("Enemy"))
