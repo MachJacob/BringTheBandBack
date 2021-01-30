@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.01.00">
-	<object class="AudioFile" id="{1d1cdebb-1eb5-4b5d-bf20-086477d2c957}">
+	<object class="AudioFile" id="{280e5dc7-59b8-4252-89ed-b1a680df6f4d}">
 		<property name="assetPath">
-			<value>PUNCH_PERCUSSIVE_HEAVY_06.wav</value>
+			<value>384370-Piano-Destroyed-demolished-broken-Wurlitzer-Upright-Wheeling-moving-across-room-squeaky-wheel-heavy-02.wav</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>96</value>
@@ -11,7 +11,7 @@
 			<value>1</value>
 		</property>
 		<property name="length">
-			<value>0.10679166666666666</value>
+			<value>3.1833125</value>
 		</property>
 		<relationship name="masterAssetFolder">
 			<destination>{b9f2c506-ec67-4e18-883c-361cd858d0ee}</destination>

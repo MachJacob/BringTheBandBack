@@ -1,6 +1,27 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-7513900915987238683
+--- !u!114 &-8110083705790723370
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: ../Fmod/BtBB/fmod newest/Build/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 637476034755459483
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 1000
+  Exists: 1
+--- !u!114 &-7203673665493700897
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -10,20 +31,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Player/Damage
+  m_Name: event:/Player/Footsteps
   m_EditorClassIdentifier: 
-  Path: event:/Player/Damage
-  guid: 2a67139c564e9e4d9ffd177f3dd53fd4
+  Path: event:/Player/Footsteps
+  guid: 5010bcfd3f23444f82ce18b3d83da35c
   Banks:
-  - {fileID: 6767407988391597943}
+  - {fileID: -1271674026331359010}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
-  Parameters: []
+  Parameters:
+  - {fileID: -2928166652584185684}
   MinDistance: 0
   MaxDistance: 0
-  Length: 464
---- !u!114 &-4608009980694332080
+  Length: 875
+--- !u!114 &-2928166652584185684
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -33,9 +55,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Attack/BassContact
+  m_Name: parameter:/Footsteps/Piano
   m_EditorClassIdentifier: 
-  Name: BassContact
+  Name: Piano
   Min: 0
   Max: 1
   Default: 0
@@ -43,7 +65,7 @@ MonoBehaviour:
     data1: 0
     data2: 0
   Exists: 1
---- !u!114 &-3550330972764272259
+--- !u!114 &-1271674026331359010
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -62,7 +84,7 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 1
---- !u!114 &-2896667016353656193
+--- !u!114 &-398782920510074988
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -82,53 +104,6 @@ MonoBehaviour:
     data1: 0
     data2: 0
   Exists: 1
---- !u!114 &-2839208818286124923
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Player/Damage
-  m_EditorClassIdentifier: 
-  Path: event:/Player/Damage
-  guid: 2a67139c564e9e4d9ffd177f3dd53fd4
-  Banks:
-  - {fileID: -3550330972764272259}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 464
---- !u!114 &-2726207567900540697
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Player/Footsteps
-  m_EditorClassIdentifier: 
-  Path: event:/Player/Footsteps
-  guid: 5010bcfd3f23444f82ce18b3d83da35c
-  Banks:
-  - {fileID: 6767407988391597943}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters:
-  - {fileID: 5729473171134505653}
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 875
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -142,94 +117,21 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: 4849516782752756724}
-  - {fileID: 6767407988391597943}
+  - {fileID: -8110083705790723370}
+  - {fileID: -1271674026331359010}
   EditorEvents:
-  - {fileID: -7513900915987238683}
-  - {fileID: -2726207567900540697}
-  - {fileID: 6985040217074106880}
-  - {fileID: 82951312892014437}
+  - {fileID: 7628909865823727579}
+  - {fileID: -7203673665493700897}
+  - {fileID: 2009977303642950076}
+  - {fileID: 5367770171582748398}
   EditorParameters: []
   MasterBanks:
-  - {fileID: 6767407988391597943}
+  - {fileID: -1271674026331359010}
   StringsBanks:
-<<<<<<< Updated upstream
-  - {fileID: 4849516782752756724}
-  stringsBankWriteTime: 637476030999196034
-=======
-  - {fileID: 4994319101616055326}
+  - {fileID: -8110083705790723370}
   stringsBankWriteTime: 637476034755459483
->>>>>>> Stashed changes
   cacheVersion: 6
---- !u!114 &82951312892014437
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Double bass/Attack
-  m_EditorClassIdentifier: 
-  Path: event:/Double bass/Attack
-  guid: e5338263ab7ed044b376c4593ff63a04
-  Banks:
-  - {fileID: 6767407988391597943}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters:
-  - {fileID: -4608009980694332080}
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 0
---- !u!114 &327114958038684535
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Footsteps/Piano
-  m_EditorClassIdentifier: 
-  Name: Piano
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Exists: 1
---- !u!114 &495944548173153213
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Double bass/Attack
-  m_EditorClassIdentifier: 
-  Path: event:/Double bass/Attack
-  guid: e5338263ab7ed044b376c4593ff63a04
-  Banks:
-  - {fileID: -3550330972764272259}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters:
-  - {fileID: -2896667016353656193}
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 0
---- !u!114 &1691800872447135268
+--- !u!114 &2009977303642950076
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -244,7 +146,7 @@ MonoBehaviour:
   Path: event:/Player/Jump
   guid: d807626e129d4443b2e17a2df00f869f
   Banks:
-  - {fileID: -3550330972764272259}
+  - {fileID: -1271674026331359010}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -252,7 +154,7 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 301
---- !u!114 &4483557322145084858
+--- !u!114 &5367770171582748398
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -262,127 +164,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Player/Footsteps
+  m_Name: event:/Double bass/Attack
   m_EditorClassIdentifier: 
-  Path: event:/Player/Footsteps
-  guid: 5010bcfd3f23444f82ce18b3d83da35c
+  Path: event:/Double bass/Attack
+  guid: e5338263ab7ed044b376c4593ff63a04
   Banks:
-  - {fileID: -3550330972764272259}
+  - {fileID: -1271674026331359010}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters:
-  - {fileID: 7754128071218372588}
+  - {fileID: -398782920510074988}
   MinDistance: 0
   MaxDistance: 0
-  Length: 875
---- !u!114 &4630880343803997117
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Attack/BassContact
-  m_EditorClassIdentifier: 
-  Name: BassContact
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Exists: 1
---- !u!114 &4849516782752756724
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.strings.bank
-  m_EditorClassIdentifier: 
-  Path: ../Fmod/BtBB/fmod newest/Build/Desktop/Master.strings.bank
-  Name: Master.strings
-  StudioPath: bank:/Master.strings
-  lastModified: 637476030999196034
-  LoadResult: 0
-  FileSizes:
-  - Name: Desktop
-    Value: 1000
-  Exists: 1
---- !u!114 &4994319101616055326
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.strings.bank
-  m_EditorClassIdentifier: 
-  Path: ../Fmod/BtBB/fmod newest/Build/Desktop/Master.strings.bank
-  Name: Master.strings
-  StudioPath: bank:/Master.strings
-  lastModified: 637476034755459483
-  LoadResult: 0
-  FileSizes:
-  - Name: 
-    Value: 1000
-  Exists: 1
-<<<<<<< Updated upstream
---- !u!114 &5729473171134505653
-=======
---- !u!114 &7754128071218372588
->>>>>>> Stashed changes
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Footsteps/Piano
-  m_EditorClassIdentifier: 
-  Name: Piano
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Exists: 1
-<<<<<<< Updated upstream
---- !u!114 &6767407988391597943
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
-  m_EditorClassIdentifier: 
-  Path: ../Fmod/BtBB/fmod newest/Build/Desktop/Master.bank
-  Name: Master
-  StudioPath: bank:/Master
-  lastModified: 637476030998986173
-  LoadResult: 0
-  FileSizes: []
-  Exists: 1
---- !u!114 &6985040217074106880
+  Length: 0
+--- !u!114 &7628909865823727579
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -392,18 +188,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Player/Jump
+  m_Name: event:/Player/Damage
   m_EditorClassIdentifier: 
-  Path: event:/Player/Jump
-  guid: d807626e129d4443b2e17a2df00f869f
+  Path: event:/Player/Damage
+  guid: 2a67139c564e9e4d9ffd177f3dd53fd4
   Banks:
-  - {fileID: 6767407988391597943}
+  - {fileID: -1271674026331359010}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 301
-=======
->>>>>>> Stashed changes
+  Length: 464
