@@ -683,6 +683,10 @@ PrefabInstance:
       value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 7787182521341860159, guid: 2e5a4f368a9304346aed156ce9d8c184, type: 3}
+      propertyPath: minDistance
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7787182521341860159, guid: 2e5a4f368a9304346aed156ce9d8c184, type: 3}
       propertyPath: playerTransform
       value: 
       objectReference: {fileID: 47694421}

@@ -56,7 +56,7 @@ public class Chase : MonoBehaviour
         if (distance >= minDistance)
         {
             Vector3 moveForce = playerTransform.transform.position - transform.position;
-            rb.MovePosition(Vector2.MoveTowards(transform.position, playerTransform.transform.position, moveSpeed * Time.deltaTime));
+            rb.MovePosition(Vector2.MoveTowards(transform.position, playerTransform.transform.position * Vector2.right, moveSpeed * Time.deltaTime));
             moveForce.Normalize();
             rb.AddForce(moveForce * moveSpeed);
         }
