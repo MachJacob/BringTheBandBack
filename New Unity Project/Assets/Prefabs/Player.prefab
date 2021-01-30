@@ -144,6 +144,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   drumStick: {fileID: 4965747568187815844, guid: 83aae30b9849d764bb70e20e483746ab, type: 3}
+  cymbol: {fileID: 4978499861104575331, guid: adf38498e05261f43badb7935ae1b5d5, type: 3}
 --- !u!114 &5369038940681033969
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -185,3 +186,4 @@ MonoBehaviour:
   maxHealth: 100
   health: 0
   alive: 0
+  healthbar: {fileID: 0}

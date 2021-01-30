@@ -11,6 +11,8 @@ public class PlayerMovement : MonoBehaviour
     public float smoothTime;
     public float jumpVel;
 
+    private bool[] band;
+
     [SerializeField] LayerMask platformLayerMask;   //platforms that can be jumped on
 
     bool inAir = false;
@@ -27,7 +29,7 @@ public class PlayerMovement : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         spr = GetComponent<SpriteRenderer>();
 
-        
+        band = new bool[5];
 
         //Fmod Instances
         footstep = FMODUnity.RuntimeManager.CreateInstance("event:/Player/Footsteps"); 
@@ -42,7 +44,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetButtonDown("Fire1"))
+        if (Input.GetButtonDown("Fire1") && band[0])
         {
             int dir = 1;
             if (spr.flipX) dir = -1;
@@ -50,7 +52,7 @@ public class PlayerMovement : MonoBehaviour
             stick.GetComponent<Rigidbody2D>().AddForce(Vector2.right * dir * 100);
             stick.GetComponent<SpriteRenderer>().flipX = spr.flipX;
         }
-        if (Input.GetButtonDown("Fire2"))
+        if (Input.GetButtonDown("Fire2") && band[0])
         {
             int dir = 1;
             if (spr.flipX) dir = -1;
@@ -122,4 +124,8 @@ public class PlayerMovement : MonoBehaviour
         Gizmos.DrawWireSphere(transform.position + (.75f * Vector3.down), 0.5f);
     }
 
+    public void EnableBand(int _idx)
+    {
+        band[_idx] = true;
+    }
 }

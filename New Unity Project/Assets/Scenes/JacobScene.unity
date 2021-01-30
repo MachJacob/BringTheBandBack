@@ -154,6 +154,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c17e2349ca592241b37a1f0f978e28a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mem: 1
   platformLayerMask:
     serializedVersion: 2
     m_Bits: 64
@@ -279,6 +280,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c17e2349ca592241b37a1f0f978e28a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mem: 4
   platformLayerMask:
     serializedVersion: 2
     m_Bits: 64
@@ -404,6 +406,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c17e2349ca592241b37a1f0f978e28a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mem: 3
   platformLayerMask:
     serializedVersion: 2
     m_Bits: 64
@@ -620,6 +623,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c17e2349ca592241b37a1f0f978e28a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mem: 0
   platformLayerMask:
     serializedVersion: 2
     m_Bits: 64
@@ -3244,6 +3248,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c17e2349ca592241b37a1f0f978e28a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mem: 2
   platformLayerMask:
     serializedVersion: 2
     m_Bits: 64
