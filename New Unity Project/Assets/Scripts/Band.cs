@@ -49,11 +49,6 @@ public class Band : MonoBehaviour
             positions.RemoveAt(0);
         }
 
-        //for (int i = 0; i > bandMem.Count; i++)
-        //{
-        //    bandMem[i].tra.position = positions[90 - (10 * i)].pos;
-        //    bandMem[i].spr.flipX = positions[90 - (10 * i)].flip;
-        //}
         foreach (Memb bMem in bandMem)  //band follows player
         {
             bMem.tra.position = positions[90 - (10 * bMem.idx)].pos;
