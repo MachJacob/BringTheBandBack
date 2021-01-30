@@ -11,11 +11,10 @@ public class PlayerMovement : MonoBehaviour
     public float smoothTime;
     public float jumpVel;
 
+    [SerializeField] LayerMask platformLayerMask;   //platforms that can be jumped on
+
     FMOD.Studio.EventInstance footstep;
     FMOD.Studio.EventInstance jump;
-
-    [SerializeField] LayerMask platformLayerMask;
-    // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -26,21 +25,20 @@ public class PlayerMovement : MonoBehaviour
         footstep = FMODUnity.RuntimeManager.CreateInstance("event:/"); 
     }
 
-    // Update is called once per frame
     void FixedUpdate()
     {
         float moveVel = Input.GetAxis("Horizontal");
 
         Vector2 targetVel = new Vector2(moveVel * moveSpeed, rb.velocity.y);
 
-        rb.velocity = Vector3.SmoothDamp(rb.velocity, targetVel, ref vel, smoothTime);
+        rb.velocity = Vector3.SmoothDamp(rb.velocity, targetVel, ref vel, smoothTime);  //smooth movement
 
         if (Input.GetAxis("Jump") > 0 && IsGrounded())
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpVel);
         }
 
-        if (rb.velocity.x > 0.1)
+        if (rb.velocity.x > 0.1)    //change direction if moving
         {
             spr.flipX = false;
         }
@@ -50,11 +48,17 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    private bool IsGrounded()
+    private bool IsGrounded()   //circle cast to check if ground is close
     {
         float extraHeight = .75f;
         RaycastHit2D raycastHit = Physics2D.CircleCast(transform.position, 0.5f, Vector2.down, extraHeight, platformLayerMask);
 
+
         return raycastHit.collider != null;
+    }
+
+    private void OnDrawGizmosSelected()
+    {
+        Gizmos.DrawWireSphere(transform.position + (.75f * Vector3.down), 0.5f);
     }
 }
