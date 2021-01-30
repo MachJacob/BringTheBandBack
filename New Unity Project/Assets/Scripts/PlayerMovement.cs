@@ -11,12 +11,19 @@ public class PlayerMovement : MonoBehaviour
     public float smoothTime;
     public float jumpVel;
 
+    FMOD.Studio.EventInstance footstep;
+    FMOD.Studio.EventInstance jump;
+
     [SerializeField] LayerMask platformLayerMask;
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         spr = GetComponent<SpriteRenderer>();
+
+        //Fmod Instances
+        footstep = FMODUnity.RuntimeManager.CreateInstance("event:/"); 
+        footstep = FMODUnity.RuntimeManager.CreateInstance("event:/"); 
     }
 
     // Update is called once per frame
