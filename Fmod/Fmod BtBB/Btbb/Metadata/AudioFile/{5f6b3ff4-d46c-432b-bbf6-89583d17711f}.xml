@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.01.00">
-	<object class="AudioFile" id="{4a09b71c-74f6-46ef-a713-8ee654026f4c}">
+	<object class="AudioFile" id="{5f6b3ff4-d46c-432b-bbf6-89583d17711f}">
 		<property name="assetPath">
-			<value>Male Vocal Grunts Short_11.wav</value>
+			<value>spring - low.wav</value>
 		</property>
 		<property name="frequencyInKHz">
-			<value>192</value>
+			<value>44.0999985</value>
 		</property>
 		<property name="channelCount">
 			<value>1</value>
 		</property>
 		<property name="length">
-			<value>0.32805208333333336</value>
+			<value>0.43453514739229027</value>
 		</property>
 		<relationship name="masterAssetFolder">
 			<destination>{b9f2c506-ec67-4e18-883c-361cd858d0ee}</destination>
