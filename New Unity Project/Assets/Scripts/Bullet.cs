@@ -52,8 +52,6 @@ public class Bullet : MonoBehaviour
             bullet.setParameterByName("BulletHit", 1);
             bullet.setParameterByName("BulletCollision", 0);
             bullet.start();
-
-            Destroy(gameObject);
         }
     }
 
