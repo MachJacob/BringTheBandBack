@@ -30,9 +30,8 @@ public class PlayerMovement : MonoBehaviour
         //Fmod Instances
         footstep = FMODUnity.RuntimeManager.CreateInstance("event:/Player/Footsteps"); 
         jump = FMODUnity.RuntimeManager.CreateInstance("event:/Player/Jump");
-        jump = FMODUnity.RuntimeManager.CreateInstance("event:/Player/Land");
         //Fmod Parameters
-        jump.setParameterByName("jumpState", 0);
+        jump.setParameterByName("jumpState", 1);
     }
 
     private void Update()
@@ -54,6 +53,8 @@ public class PlayerMovement : MonoBehaviour
         Vector2 targetVel = new Vector2(moveVel * moveSpeed, rb.velocity.y);
 
         rb.velocity = Vector3.SmoothDamp(rb.velocity, targetVel, ref vel, smoothTime);  //smooth movement
+
+        
 
         if (Input.GetAxis("Jump") > 0 && IsGrounded())
         {
