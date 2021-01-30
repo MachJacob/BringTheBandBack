@@ -34,12 +34,12 @@ public class PlayerMovement : MonoBehaviour
         //Fmod Instances
         footstep = FMODUnity.RuntimeManager.CreateInstance("event:/Player/Footsteps"); 
         jump = FMODUnity.RuntimeManager.CreateInstance("event:/Player/Jump");
-        music = FMODUnity.RuntimeManager.CreateInstance("event:/Music/Music");
+        music = FMODUnity.RuntimeManager.CreateInstance("event:/Music/MusicRandom");
         //Fmod Parameters
         jump.setParameterByName("jumpState", 1);
         //music start
+        music.setParameterByName("chord", 0);
         music.start();
-
     }
 
     private void Update()
@@ -60,6 +60,16 @@ public class PlayerMovement : MonoBehaviour
             stick.GetComponent<Rigidbody2D>().AddForce(Vector2.right * dir * 100);
             stick.GetComponent<SpriteRenderer>().flipX = spr.flipX;
         }
+
+        //music FMOD Shit
+        FMOD.Studio.PLAYBACK_STATE state;
+        music.getPlaybackState(out state);
+
+        if (state == FMOD.Studio.PLAYBACK_STATE.STOPPING)
+        {
+            music.setParameterByName("chord", Random.Range(0, 5));
+            music.start();
+        }
     }
 
     void FixedUpdate()
@@ -69,8 +79,6 @@ public class PlayerMovement : MonoBehaviour
         Vector2 targetVel = new Vector2(moveVel * moveSpeed, rb.velocity.y);
 
         rb.velocity = Vector3.SmoothDamp(rb.velocity, targetVel, ref vel, smoothTime);  //smooth movement
-
-        
 
         if (Input.GetAxis("Jump") > 0 && IsGrounded())
         {
@@ -128,4 +136,5 @@ public class PlayerMovement : MonoBehaviour
     {
         band[_idx] = true;
     }
+
 }

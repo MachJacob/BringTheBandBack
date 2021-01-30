@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="ParameterPreset" id="{e71425dd-961d-4af4-a254-77c282276ed0}">
+		<property name="name">
+			<value>chord</value>
+		</property>
+		<relationship name="folder">
+			<destination>{dafc4b04-c1c1-47b1-8da0-1cb04ff5edf0}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{3414291e-8451-4028-ad05-a2d404938398}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{3414291e-8451-4028-ad05-a2d404938398}">
+		<property name="parameterType">
+			<value>2</value>
+		</property>
+		<property name="maximum">
+			<value>6</value>
+		</property>
+		<property name="enumerationLabels">
+			<value>A7</value>
+			<value>Amaj7</value>
+			<value>C7sus</value>
+			<value>Cmaj7</value>
+			<value>G7</value>
+			<value>Gmaj7</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>
