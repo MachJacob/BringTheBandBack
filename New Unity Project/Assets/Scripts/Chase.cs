@@ -27,41 +27,17 @@ public class Chase : MonoBehaviour
     }
     void FixedUpdate()
     {
-        if (timer > 0)
-        {
-            timer -= Time.deltaTime;
-        }
-        if (timer <= 0)
-        {
-            ChaseFunction();
-            timer = moveCooldown;
-        }
-
-        //transform.LookAt(playerTransform);
-
-        //if(Vector2.Distance(transform.position , playerTransform.position) >= minDistance)
+        //if (timer > 0)
         //{
-        //    transform.position = Vector3.MoveTowards(transform.position, playerTransform.position, moveSpeed * Time.deltaTime);
+        //    timer -= Time.deltaTime;
         //}
-        //if (Vector2.Distance(transform.position, playerTransform.position) <= maxDistance)
+        //if (timer <= 0)
         //{
-        //    //Here Call any function U want Like Shoot at here or something
+        //    ChaseFunction();
+        //    timer = moveCooldown;
         //}
 
-        //transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(playerTransform.transform.position - transform.position), rotationSpeed * Time.deltaTime);
-
-        //transform.position += transform.forward * Time.deltaTime * moveSpeed;
-
-
-        //float distance = Vector3.Distance(transform.position, playerTransform.position);
-
-        //if (distance < maxDistance)
-        //{
-        //    //Vector3 moveForce = playerTransform.transform.position - transform.position;
-        //    rb.MovePosition(Vector2.MoveTowards(transform.position, playerTransform.transform.position, moveSpeed));
-        //    //moveForce.Normalize();
-        //    //rb.AddForce(moveForce * moveSpeed);
-        //}
+        ChaseFunction();
     }
 
     public void ChaseFunction()
@@ -82,3 +58,44 @@ public class Chase : MonoBehaviour
         }
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+//transform.LookAt(playerTransform);
+
+//if(Vector2.Distance(transform.position , playerTransform.position) >= minDistance)
+//{
+//    transform.position = Vector3.MoveTowards(transform.position, playerTransform.position, moveSpeed * Time.deltaTime);
+//}
+//if (Vector2.Distance(transform.position, playerTransform.position) <= maxDistance)
+//{
+//    //Here Call any function U want Like Shoot at here or something
+//}
+
+//transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(playerTransform.transform.position - transform.position), rotationSpeed * Time.deltaTime);
+
+//transform.position += transform.forward * Time.deltaTime * moveSpeed;
+
+
+//float distance = Vector3.Distance(transform.position, playerTransform.position);
+
+//if (distance < maxDistance)
+//{
+//    //Vector3 moveForce = playerTransform.transform.position - transform.position;
+//    rb.MovePosition(Vector2.MoveTowards(transform.position, playerTransform.transform.position, moveSpeed));
+//    //moveForce.Normalize();
+//    //rb.AddForce(moveForce * moveSpeed);
+//}
+
+
+
+
+
