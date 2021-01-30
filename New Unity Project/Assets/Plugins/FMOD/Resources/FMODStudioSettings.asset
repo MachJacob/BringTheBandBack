@@ -328,10 +328,10 @@ MonoBehaviour:
   m_Name: FMODStudioSettings
   m_EditorClassIdentifier: 
   SwitchSettingsMigration: 1
-  HasSourceProject: 1
-  HasPlatforms: 1
-  sourceProjectPath: ../Fmod/BtBB/fmod newest/Btbb.fspro
-  sourceBankPath: ..\Fmod\BtBB\fmod newest\Build
+  HasSourceProject: 0
+  HasPlatforms: 0
+  sourceProjectPath: ../Fmod/BtBB/Btbb.fspro
+  sourceBankPath: ..\Fmod\BtBB\Build
   SourceBankPathUnformatted: 
   AutomaticEventLoading: 1
   BankLoadType: 0
@@ -350,8 +350,7 @@ MonoBehaviour:
   VirtualChannelSettings: []
   RealChannelSettings: []
   Plugins: []
-  MasterBanks:
-  - Master
+  MasterBanks: []
   Banks: []
   BanksToLoad: []
   LiveUpdatePort: 9264
