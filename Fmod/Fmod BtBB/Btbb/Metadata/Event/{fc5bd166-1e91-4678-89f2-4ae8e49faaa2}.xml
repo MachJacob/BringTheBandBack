@@ -5,7 +5,7 @@
 			<value>BulletCollision</value>
 		</property>
 		<property name="outputFormat">
-			<value>1</value>
+			<value>0</value>
 		</property>
 		<relationship name="folder">
 			<destination>{962a7347-b40d-47e3-a2ec-02873bfdd4e3}</destination>
@@ -82,7 +82,7 @@
 	</object>
 	<object class="GroupTrack" id="{fde73d53-292f-43ab-b159-491406a6e0f0}">
 		<relationship name="modules">
-			<destination>{e0f2b0c2-c965-45d2-8533-696627a025ce}</destination>
+			<destination>{6334e655-f9cc-435b-a45c-0dc0d4556f8a}</destination>
 		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{cc7fa812-4bca-4e57-b96b-79af9b86705d}</destination>
@@ -97,8 +97,8 @@
 		<relationship name="modules">
 			<destination>{321bb66e-d16f-4c04-a5a8-b4ed43c9da48}</destination>
 			<destination>{cd2205ff-a27b-4d91-ab01-cb06d1810537}</destination>
-			<destination>{e0f2b0c2-c965-45d2-8533-696627a025ce}</destination>
 			<destination>{3a0349f9-9d45-4ea5-9c95-7137548c15c1}</destination>
+			<destination>{6334e655-f9cc-435b-a45c-0dc0d4556f8a}</destination>
 		</relationship>
 		<relationship name="preset">
 			<destination>{0b61f1cf-5fe7-40c6-9f0d-d72824ffe49f}</destination>
@@ -157,6 +157,9 @@
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{5e02665f-646a-4148-9812-a3cf3092a862}">
+		<property name="volume">
+			<value>-5.5</value>
+		</property>
 		<property name="name">
 			<value>Audio 2</value>
 		</property>
@@ -170,7 +173,7 @@
 			<destination>{6156d443-4cc8-4eb1-8de5-c447a4f62975}</destination>
 		</relationship>
 	</object>
-	<object class="SingleSound" id="{e0f2b0c2-c965-45d2-8533-696627a025ce}">
+	<object class="SingleSound" id="{6334e655-f9cc-435b-a45c-0dc0d4556f8a}">
 		<property name="start">
 			<value>1</value>
 		</property>
@@ -180,7 +183,7 @@
 	</object>
 	<object class="EventMixerGroup" id="{cc7fa812-4bca-4e57-b96b-79af9b86705d}">
 		<property name="volume">
-			<value>-13</value>
+			<value>-14.5</value>
 		</property>
 		<property name="name">
 			<value>Audio 3</value>
