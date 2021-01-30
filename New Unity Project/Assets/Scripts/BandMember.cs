@@ -10,6 +10,7 @@ public class BandMember : MonoBehaviour
 
     FMOD.Studio.EventInstance footstep;
     FMOD.Studio.EventInstance jump;
+    FMOD.Studio.EventInstance land;
 
     // Start is called before the first frame update
     void Start()
@@ -17,7 +18,7 @@ public class BandMember : MonoBehaviour
         //Fmod Instances
         footstep = FMODUnity.RuntimeManager.CreateInstance("event:/Player/Footsteps");
         jump = FMODUnity.RuntimeManager.CreateInstance("event:/Player/Jump");
-        footstep.start();
+        jump = FMODUnity.RuntimeManager.CreateInstance("event:/Player/Land");
         //Fmod Parameters
         jump.setParameterByName("jumpState", 0);
 
@@ -35,6 +36,13 @@ public class BandMember : MonoBehaviour
 
         if (IsGrounded() && inAir)
         {
+            //getting velocity
+            Vector3 playerVelocity = rb.GetRelativePointVelocity(new Vector3(0.0f, 0.0f, 0.0f));
+            if (playerVelocity.y < 0) { playerVelocity.y = 0 - playerVelocity.y; }
+            if (playerVelocity.y > 10) { playerVelocity.y = 10; }
+            Debug.Log(playerVelocity.y);
+            land.setParameterByName("downVelocity", playerVelocity.y);
+
             inAir = false;
             jump.setParameterByName("jumpState", 0);
             jump.start();
