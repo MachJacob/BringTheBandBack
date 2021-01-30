@@ -142,6 +142,7 @@ MonoBehaviour:
   platformLayerMask:
     serializedVersion: 2
     m_Bits: 64
+  drumStick: {fileID: 4965747568187815844, guid: 83aae30b9849d764bb70e20e483746ab, type: 3}
 --- !u!114 &5369038940681033969
 MonoBehaviour:
   m_ObjectHideFlags: 0
