@@ -22,14 +22,18 @@ public class PlayerMovement : MonoBehaviour
         spr = GetComponent<SpriteRenderer>();
 
         //Fmod Instances
-        footstep = FMODUnity.RuntimeManager.CreateInstance("event:/"); 
-        footstep = FMODUnity.RuntimeManager.CreateInstance("event:/"); 
+        footstep = FMODUnity.RuntimeManager.CreateInstance("event:/Player/Footsteps"); 
+        jump = FMODUnity.RuntimeManager.CreateInstance("event:/Player/Jump");
+
+        //Fmod Parameters
+        //jump.setParameterByName("jumpState", 0);
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
         float moveVel = Input.GetAxis("Horizontal");
+        int jumpState = 0;
 
         Vector2 targetVel = new Vector2(moveVel * moveSpeed, rb.velocity.y);
 
@@ -38,6 +42,10 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetAxis("Jump") > 0 && IsGrounded())
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpVel);
+
+            jumpState = 1;
+            jump.setParameterByName("jumpState", jumpState);
+            jump.start();
         }
 
         if (rb.velocity.x > 0.1)
@@ -47,6 +55,13 @@ public class PlayerMovement : MonoBehaviour
         else if (rb.velocity.x < -0.1)
         {
             spr.flipX = true;
+        }
+
+        if (jumpState == 1 && IsGrounded())
+        {
+            jumpState = 0;
+            jump.setParameterByName("jumpState", jumpState);
+            jump.start();
         }
     }
 
