@@ -5,7 +5,7 @@
 			<value>StickCollision</value>
 		</property>
 		<property name="outputFormat">
-			<value>1</value>
+			<value>0</value>
 		</property>
 		<relationship name="folder">
 			<destination>{27f3c8fc-e606-493b-ba74-d5c3ecce3600}</destination>
@@ -124,6 +124,9 @@
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{8403e61c-f21d-4e6e-b2ec-5f0db52bce41}">
+		<property name="volume">
+			<value>-3</value>
+		</property>
 		<property name="name">
 			<value>Audio 1</value>
 		</property>
@@ -188,26 +191,41 @@
 	</object>
 	<object class="MixerBusPanner" id="{5abb7c53-18f2-40b1-bdaa-7601f2ec4491}" />
 	<object class="SingleSound" id="{4c4f2dc7-5705-419e-b8de-25328cfcbdc8}">
+		<property name="volume">
+			<value>-3.5</value>
+		</property>
 		<relationship name="audioFile">
 			<destination>{0ab5d34f-2244-44ae-97f1-f14c3a87d6f0}</destination>
 		</relationship>
 	</object>
 	<object class="SingleSound" id="{77a247d1-7bc0-4929-a549-72bd8140426a}">
+		<property name="volume">
+			<value>-3.5</value>
+		</property>
 		<relationship name="audioFile">
 			<destination>{1f4e1483-36c2-4ca6-ae68-ef5acdc27f01}</destination>
 		</relationship>
 	</object>
 	<object class="SingleSound" id="{f7618f1b-bf5a-4515-899b-9fdf00954635}">
+		<property name="volume">
+			<value>-3.5</value>
+		</property>
 		<relationship name="audioFile">
 			<destination>{c1d298fb-a41f-4598-a241-a0f096e6e664}</destination>
 		</relationship>
 	</object>
 	<object class="SingleSound" id="{0191ae64-9e57-4e10-aa42-3b27a1639b16}">
+		<property name="volume">
+			<value>-4.5</value>
+		</property>
 		<relationship name="audioFile">
 			<destination>{1ec8efaf-0122-4eeb-95c3-4aef67ebd1df}</destination>
 		</relationship>
 	</object>
 	<object class="SingleSound" id="{7672cf3b-c3c9-4d61-82dd-01d3ffe366ff}">
+		<property name="volume">
+			<value>9.5</value>
+		</property>
 		<relationship name="audioFile">
 			<destination>{5c59a571-fbbc-4536-b03e-4cde9a37ffc4}</destination>
 		</relationship>

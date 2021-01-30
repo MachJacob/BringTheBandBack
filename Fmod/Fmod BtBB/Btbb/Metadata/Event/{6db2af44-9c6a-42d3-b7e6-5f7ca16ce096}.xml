@@ -5,7 +5,7 @@
 			<value>Cymbal</value>
 		</property>
 		<property name="outputFormat">
-			<value>1</value>
+			<value>0</value>
 		</property>
 		<relationship name="folder">
 			<destination>{27f3c8fc-e606-493b-ba74-d5c3ecce3600}</destination>
@@ -151,7 +151,7 @@
 	</object>
 	<object class="EventMixerGroup" id="{6a5eaa19-3a76-4127-b34e-5a31ffe7e401}">
 		<property name="volume">
-			<value>-5</value>
+			<value>-2</value>
 		</property>
 		<property name="name">
 			<value>Audio 2</value>
