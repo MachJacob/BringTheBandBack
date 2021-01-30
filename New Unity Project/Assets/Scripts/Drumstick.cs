@@ -12,13 +12,18 @@ public class Drumstick : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        
         Destroy(gameObject);
+        sticks.setParameterByName("SticksContact", 1);
 
         if (collision.gameObject.CompareTag("Enemy"))
         {
-            sticks.setParameterByName("SticksContact", 1);
+            sticks.setParameterByName("StickCollision", 0);
             sticks.start();
-        }   
+        }
+        else
+        {
+            sticks.setParameterByName("StickCollision", 1);
+            sticks.start();
+        }
      }
 }
