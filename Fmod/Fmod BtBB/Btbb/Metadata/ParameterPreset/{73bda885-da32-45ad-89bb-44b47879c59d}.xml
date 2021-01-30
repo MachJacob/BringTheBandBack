@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.01.00">
-	<object class="ParameterPreset" id="{d57e6a5a-eb6c-4044-ad95-e7c6deca4bd3}">
+	<object class="ParameterPreset" id="{73bda885-da32-45ad-89bb-44b47879c59d}">
 		<property name="name">
-			<value>CymbalContact </value>
+			<value>Parameter 1</value>
 		</property>
 		<relationship name="folder">
 			<destination>{dafc4b04-c1c1-47b1-8da0-1cb04ff5edf0}</destination>
 		</relationship>
 		<relationship name="parameter">
-			<destination>{66d6dc56-bbf6-4262-b2f2-ada990de3ed4}</destination>
+			<destination>{994f535c-e7f5-4642-b6b7-fb361ff9b74a}</destination>
 		</relationship>
 	</object>
-	<object class="GameParameter" id="{66d6dc56-bbf6-4262-b2f2-ada990de3ed4}">
+	<object class="GameParameter" id="{994f535c-e7f5-4642-b6b7-fb361ff9b74a}">
 		<property name="parameterType">
 			<value>1</value>
 		</property>
@@ -20,9 +20,6 @@
 		</property>
 		<property name="initialValue">
 			<value>0</value>
-		</property>
-		<property name="isExposedRecursively">
-			<value>false</value>
 		</property>
 	</object>
 </objects>
