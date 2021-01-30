@@ -35,6 +35,9 @@ public class PlayerMovement : MonoBehaviour
         music = FMODUnity.RuntimeManager.CreateInstance("event:/Music/Music");
         //Fmod Parameters
         jump.setParameterByName("jumpState", 1);
+        //music start
+        music.start();
+
     }
 
     private void Update()
