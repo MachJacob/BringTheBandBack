@@ -192,7 +192,7 @@ MonoBehaviour:
   enemy_rigidbody: {fileID: 373244252}
   playersHealth: {fileID: 569944492}
   hitObject: {fileID: 373244250}
-  damage: 25
+  damage: 20
 --- !u!50 &373244252 stripped
 Rigidbody2D:
   m_CorrespondingSourceObject: {fileID: 7787182521341860160, guid: 2e5a4f368a9304346aed156ce9d8c184, type: 3}
@@ -830,6 +830,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1518285136680986339, guid: 3e1b56e6fd4920e46947f42831571065, type: 3}
+      propertyPath: fill
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 1518285137028040886, guid: 3e1b56e6fd4920e46947f42831571065, type: 3}
       propertyPath: m_Name
       value: HUD
@@ -951,21 +955,29 @@ PrefabInstance:
       propertyPath: playerTransform
       value: 
       objectReference: {fileID: 47694421}
+    - target: {fileID: 7787182521341860161, guid: 2e5a4f368a9304346aed156ce9d8c184, type: 3}
+      propertyPath: m_Size.x
+      value: 1.65
+      objectReference: {fileID: 0}
+    - target: {fileID: 7787182521341860161, guid: 2e5a4f368a9304346aed156ce9d8c184, type: 3}
+      propertyPath: m_Size.y
+      value: 2.4
+      objectReference: {fileID: 0}
     - target: {fileID: 7787182521341860162, guid: 2e5a4f368a9304346aed156ce9d8c184, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 7245173617873359384, guid: c264a2bc537e8784db1dc649c6e9e1b1, type: 3}
+      objectReference: {fileID: -3539214219840349942, guid: f3b221b832f432f47841e92119a273a3, type: 3}
     - target: {fileID: 7787182521341860162, guid: 2e5a4f368a9304346aed156ce9d8c184, type: 3}
       propertyPath: m_Color.a
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7787182521341860162, guid: 2e5a4f368a9304346aed156ce9d8c184, type: 3}
       propertyPath: m_Color.b
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7787182521341860162, guid: 2e5a4f368a9304346aed156ce9d8c184, type: 3}
       propertyPath: m_Color.g
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7787182521341860162, guid: 2e5a4f368a9304346aed156ce9d8c184, type: 3}
       propertyPath: m_Color.r
@@ -981,7 +993,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7787182521341860163, guid: 2e5a4f368a9304346aed156ce9d8c184, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.18
       objectReference: {fileID: 0}
     - target: {fileID: 7787182521341860163, guid: 2e5a4f368a9304346aed156ce9d8c184, type: 3}
       propertyPath: m_LocalPosition.z
