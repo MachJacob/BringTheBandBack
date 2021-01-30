@@ -8,7 +8,7 @@ public class Enemies : MonoBehaviour
     Rigidbody2D enemy_rigidbody;
 
     float enemy_health = 10f;
-    public float walking_distance = 10.0f;
+    //public float walking_distance = 10.0f;
 
     void Start()
     {

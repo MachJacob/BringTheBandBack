@@ -8,6 +8,7 @@ public class CameraFollow : MonoBehaviour
     public Vector3 offset;
     private Vector3 vel;
     public float smoothTime;
+
     void Start()
     {
 
