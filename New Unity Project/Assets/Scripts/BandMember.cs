@@ -52,8 +52,8 @@ public class BandMember : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             collision.GetComponent<Band>().AddBandMember(gameObject);
+            Destroy(GetComponent<Collider2D>());
         }
-        Destroy(GetComponent<Collider2D>());
     }
 
     private bool IsGrounded()   //circle cast to check if ground is close

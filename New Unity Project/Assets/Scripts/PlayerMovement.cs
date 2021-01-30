@@ -18,7 +18,8 @@ public class PlayerMovement : MonoBehaviour
     FMOD.Studio.EventInstance footstep;
     FMOD.Studio.EventInstance jump;
 
-    public GameObject drumStick;
+    public GameObject drumStick; 
+    public GameObject cymbol;
 
     void Start()
     {
@@ -30,9 +31,8 @@ public class PlayerMovement : MonoBehaviour
         //Fmod Instances
         footstep = FMODUnity.RuntimeManager.CreateInstance("event:/Player/Footsteps"); 
         jump = FMODUnity.RuntimeManager.CreateInstance("event:/Player/Jump");
-        jump = FMODUnity.RuntimeManager.CreateInstance("event:/Player/Land");
         //Fmod Parameters
-        jump.setParameterByName("jumpState", 0);
+        jump.setParameterByName("jumpState", 1);
     }
 
     private void Update()
@@ -45,6 +45,14 @@ public class PlayerMovement : MonoBehaviour
             stick.GetComponent<Rigidbody2D>().AddForce(Vector2.right * dir * 100);
             stick.GetComponent<SpriteRenderer>().flipX = spr.flipX;
         }
+        if (Input.GetButtonDown("Fire2"))
+        {
+            int dir = 1;
+            if (spr.flipX) dir = -1;
+            GameObject stick = Instantiate(cymbol, transform.position + Vector3.right * dir * 1.55f, Quaternion.identity);
+            stick.GetComponent<Rigidbody2D>().AddForce(Vector2.right * dir * 100);
+            stick.GetComponent<SpriteRenderer>().flipX = spr.flipX;
+        }
     }
 
     void FixedUpdate()
@@ -54,6 +62,8 @@ public class PlayerMovement : MonoBehaviour
         Vector2 targetVel = new Vector2(moveVel * moveSpeed, rb.velocity.y);
 
         rb.velocity = Vector3.SmoothDamp(rb.velocity, targetVel, ref vel, smoothTime);  //smooth movement
+
+        
 
         if (Input.GetAxis("Jump") > 0 && IsGrounded())
         {
