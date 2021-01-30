@@ -4,31 +4,32 @@ using UnityEngine;
 
 public class MeleeEnemy : Enemies
 {
-    public GameObject players_health;
+    public GameObject playersHealth;
+    public GameObject hitObject;
+
+    public float damage = 25.0f;
 
     void Start()
     {
-        players_health = GameObject.FindWithTag("Player");
+        playersHealth = GameObject.FindWithTag("Player");
     }
 
-    void OnCollisionEnter2D(Collision2D collision)
+    public void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "Player")
         {
             Hit();
+            //collision.gameObject.GetComponent<Player>().DealDamage(damage);
         }
     }
 
-    private void Hit()
+    public void Hit()
     {
-        //finish once the player has actual health
-
-        //players_health.GetComponent<>
+        playersHealth.GetComponent<Player>().DealDamage(damage);
+        //Debug.Log("Oof, my health is: " + playersHealth);
     }
-
-    // Update is called once per frame
     void Update()
     {
-        //if(this.gameObject == tag.GetType())
+        
     }
 }
