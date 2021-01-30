@@ -137,13 +137,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerTransform: {fileID: 0}
-  moveSpeed: 2
+  enemyShooter: {fileID: 0}
+  moveSpeed: 0.5
   moveCooldown: 1
   timer: 0
   rotationSpeed: 5
   maxDistance: 5
   minDistance: 1
   rb: {fileID: 735565309553149240}
+  playersHealth: {fileID: 0}
+  damage: 20
+  rangedGameobject: []
 --- !u!114 &6259542501794118496
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -169,3 +173,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d3f609d6db93c54184134d2542cd437, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playersHealth: {fileID: 0}
+  damage: 20
+  rangedGameobject:
+  - {fileID: 2012993297485625001, guid: f540195fa5379084c9daff329b42467d, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}

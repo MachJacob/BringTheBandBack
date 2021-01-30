@@ -4,15 +4,47 @@ using UnityEngine;
 
 public class RangedEnemy : MonoBehaviour
 {
-    // Start is called before the first frame update
+    //private GameObject rangedObject;
+    public GameObject playersHealth;
+    public float damage = 20.0f;
+
+    public GameObject[] rangedGameobject;
+    private Transform[] exitPoints;
+
+    protected Rigidbody2D RangedRB;
+
+    private float speed;
+
+    private Transform target;
+
+    public GameObject bullet;
+    private float fireRate;
+    private float nextFire;
+
     void Start()
     {
-        
-    }
+        //playersHealth = GameObject.FindWithTag("Player");
+        //RangedRB = GetComponent<Rigidbody2D>();
 
-    // Update is called once per frame
-    void Update()
+        fireRate = 1f;
+        nextFire = Time.deltaTime;
+    }
+    public void Shoot()
     {
-        
+        //Instantiate(rangedGameobject[0], transform.position, Quaternion.identity);
+        //target = GameObject.Find("Player").transform;
+        //Vector2 direction = target.position - transform.position;
+        //RangedRB.velocity = direction.normalized * speed;
+
+        if(Time.time > nextFire)
+        {
+            Instantiate(bullet, transform.position, Quaternion.identity);
+            nextFire = Time.time + fireRate;
+        }
+
+    }
+    void FixedUpdate()
+    {
+        Shoot();
     }
 }
