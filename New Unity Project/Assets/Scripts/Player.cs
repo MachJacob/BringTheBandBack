@@ -9,7 +9,9 @@ public class Player : MonoBehaviour
     [SerializeField] 
     public float maxHealth = 100f;
     public float health;
-    private bool alive;
+    public bool alive;
+
+    public HealthBar healthbar;
 
     FMOD.Studio.EventInstance damageTaken;
 
@@ -36,5 +38,14 @@ public class Player : MonoBehaviour
     public void Update()
     {
         //something something update player stats
+
+
+
+
+        if (healthbar) //healthbar stat
+        {
+            healthbar.fill = health / maxHealth;
+        }
+
     }
 }
