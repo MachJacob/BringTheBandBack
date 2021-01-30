@@ -31,7 +31,6 @@ public class Player : MonoBehaviour
         if (health <= 0)
         {
             alive = false;
-            Debug.Log("IM DED LADS");
             //Destroy(this.gameObject);
         }
     }
