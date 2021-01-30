@@ -36,7 +36,7 @@ public class RangedEnemy : MonoBehaviour
 
         if(Time.time > nextFire)
         {
-            Instantiate(bullet, transform.position, Quaternion.identity);
+            Instantiate(bullet, transform.position + transform.up * 1.5f, Quaternion.identity);
             nextFire = Time.time + fireRate;
         }
 
