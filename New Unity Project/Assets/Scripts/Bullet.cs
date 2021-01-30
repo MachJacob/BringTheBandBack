@@ -29,7 +29,7 @@ public class Bullet : MonoBehaviour
         moveDirection = (target.transform.position - transform.position).normalized * moveSpeed;
         rb.velocity = new Vector2(moveDirection.x, moveDirection.y);
         //rb.velocity = moveDirection.normalized;
-        Destroy(gameObject, 7f);
+        Destroy(gameObject, 4f);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -54,7 +54,6 @@ public class Bullet : MonoBehaviour
             bullet.start();
         }
     }
-
     //public void OnCollisionEnter2D(Collision2D collision)
     //{
     //    if (collision.gameObject.tag == "Player")

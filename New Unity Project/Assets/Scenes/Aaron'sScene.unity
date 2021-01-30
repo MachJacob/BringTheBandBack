@@ -1418,6 +1418,14 @@ PrefabInstance:
       propertyPath: rangedGameobject.Array.data[3]
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 6259542501794118496, guid: 352e53aa2865fa6458848b41a128ea22, type: 3}
+      propertyPath: drumStickObject
+      value: 
+      objectReference: {fileID: 4965747568187815844, guid: 83aae30b9849d764bb70e20e483746ab, type: 3}
+    - target: {fileID: 6259542501794118496, guid: 352e53aa2865fa6458848b41a128ea22, type: 3}
+      propertyPath: drumstickDamage
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: -2933962001217490358, guid: 352e53aa2865fa6458848b41a128ea22, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 352e53aa2865fa6458848b41a128ea22, type: 3}
