@@ -190,6 +190,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy_rigidbody: {fileID: 373244252}
+  players_health: {fileID: 0}
 --- !u!50 &373244252 stripped
 Rigidbody2D:
   m_CorrespondingSourceObject: {fileID: 7787182521341860160, guid: 2e5a4f368a9304346aed156ce9d8c184, type: 3}
@@ -704,6 +705,10 @@ PrefabInstance:
     - target: {fileID: 7787182521341860158, guid: 2e5a4f368a9304346aed156ce9d8c184, type: 3}
       propertyPath: m_Name
       value: Enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 7787182521341860159, guid: 2e5a4f368a9304346aed156ce9d8c184, type: 3}
+      propertyPath: timer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7787182521341860159, guid: 2e5a4f368a9304346aed156ce9d8c184, type: 3}
       propertyPath: minDistance

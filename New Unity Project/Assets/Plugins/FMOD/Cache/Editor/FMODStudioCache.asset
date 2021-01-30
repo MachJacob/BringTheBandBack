@@ -58,9 +58,29 @@ MonoBehaviour:
   Path: ../Fmod/BtBB/fmod newest/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637476030998986173
+  lastModified: 637476034755459483
   LoadResult: 0
   FileSizes: []
+  Exists: 1
+--- !u!114 &-2896667016353656193
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Attack/BassContact
+  m_EditorClassIdentifier: 
+  Name: BassContact
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
   Exists: 1
 --- !u!114 &-2839208818286124923
 MonoBehaviour:
@@ -133,8 +153,13 @@ MonoBehaviour:
   MasterBanks:
   - {fileID: 6767407988391597943}
   StringsBanks:
+<<<<<<< Updated upstream
   - {fileID: 4849516782752756724}
   stringsBankWriteTime: 637476030999196034
+=======
+  - {fileID: 4994319101616055326}
+  stringsBankWriteTime: 637476034755459483
+>>>>>>> Stashed changes
   cacheVersion: 6
 --- !u!114 &82951312892014437
 MonoBehaviour:
@@ -200,7 +225,7 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 1
   Parameters:
-  - {fileID: 4630880343803997117}
+  - {fileID: -2896667016353656193}
   MinDistance: 0
   MaxDistance: 0
   Length: 0
@@ -247,7 +272,7 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 1
   Parameters:
-  - {fileID: 327114958038684535}
+  - {fileID: 7754128071218372588}
   MinDistance: 0
   MaxDistance: 0
   Length: 875
@@ -307,13 +332,17 @@ MonoBehaviour:
   Path: ../Fmod/BtBB/fmod newest/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637476030999196034
+  lastModified: 637476034755459483
   LoadResult: 0
   FileSizes:
-  - Name: Desktop
+  - Name: 
     Value: 1000
   Exists: 1
+<<<<<<< Updated upstream
 --- !u!114 &5729473171134505653
+=======
+--- !u!114 &7754128071218372588
+>>>>>>> Stashed changes
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -333,6 +362,7 @@ MonoBehaviour:
     data1: 0
     data2: 0
   Exists: 1
+<<<<<<< Updated upstream
 --- !u!114 &6767407988391597943
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -375,3 +405,5 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 301
+=======
+>>>>>>> Stashed changes
