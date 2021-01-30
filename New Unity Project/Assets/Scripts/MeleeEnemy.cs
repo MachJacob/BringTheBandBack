@@ -7,7 +7,7 @@ public class MeleeEnemy : Enemies
     public GameObject playersHealth;
     public GameObject hitObject;
 
-    public float damage = 25.0f;
+    public float damage = 20.0f;
 
     void Start()
     {
