@@ -13,6 +13,8 @@ public class PlayerMovement : MonoBehaviour
 
     [SerializeField] LayerMask platformLayerMask;   //platforms that can be jumped on
 
+    bool inAir = false;
+
     FMOD.Studio.EventInstance footstep;
     FMOD.Studio.EventInstance jump;
     void Start()
@@ -20,10 +22,12 @@ public class PlayerMovement : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         spr = GetComponent<SpriteRenderer>();
 
+        
+
         //Fmod Instances
         footstep = FMODUnity.RuntimeManager.CreateInstance("event:/Player/Footsteps"); 
         jump = FMODUnity.RuntimeManager.CreateInstance("event:/Player/Jump");
-
+        footstep.start();
         //Fmod Parameters
         //jump.setParameterByName("jumpState", 0);
     }
@@ -31,8 +35,7 @@ public class PlayerMovement : MonoBehaviour
     void FixedUpdate()
     {
         float moveVel = Input.GetAxis("Horizontal");
-        int jumpState = 0;
-
+        
         Vector2 targetVel = new Vector2(moveVel * moveSpeed, rb.velocity.y);
 
         rb.velocity = Vector3.SmoothDamp(rb.velocity, targetVel, ref vel, smoothTime);  //smooth movement
@@ -41,8 +44,7 @@ public class PlayerMovement : MonoBehaviour
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpVel);
 
-            jumpState = 1;
-            jump.setParameterByName("jumpState", jumpState);
+            jump.setParameterByName("jumpState", 1);
             jump.start();
         }
 
@@ -55,11 +57,17 @@ public class PlayerMovement : MonoBehaviour
             spr.flipX = true;
         }
 
-        if (jumpState == 1 && IsGrounded())
+        if (!IsGrounded())
         {
-            jumpState = 0;
-            jump.setParameterByName("jumpState", jumpState);
+            inAir = true;
+        }
+
+        if(IsGrounded() && inAir)
+        {
+            inAir = false;
+            jump.setParameterByName("jumpState", 0);
             jump.start();
+            footstep.start();
         }
     }
 
