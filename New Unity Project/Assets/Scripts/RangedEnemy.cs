@@ -26,7 +26,7 @@ public class RangedEnemy : MonoBehaviour
         //playersHealth = GameObject.FindWithTag("Player");
         //RangedRB = GetComponent<Rigidbody2D>();
 
-        fireRate = 5f;
+        fireRate = 4f;
         nextFire = Time.deltaTime;
 
         spit = FMODUnity.RuntimeManager.CreateInstance("event:/Enemy2/Attack");
@@ -40,8 +40,9 @@ public class RangedEnemy : MonoBehaviour
 
         if(Time.time > nextFire)
         {
+            Random.Range(1, 5);
             Instantiate(bullet, transform.position + transform.up * 1.5f, Quaternion.identity);
-            nextFire = Time.time + fireRate;
+            nextFire = Time.time + fireRate + Random.Range(1, fireRate);
 
             spit.start();
         }
