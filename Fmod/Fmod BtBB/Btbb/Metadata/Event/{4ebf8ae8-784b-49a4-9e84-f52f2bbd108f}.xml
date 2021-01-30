@@ -116,8 +116,14 @@
 	</object>
 	<object class="MixerBusPanner" id="{c5e53e63-5e6b-4641-9c74-37312f7e9828}" />
 	<object class="SingleSound" id="{9faa8ce9-ba7b-44ec-863a-e110391308a0}">
+		<property name="triggerProbabilityEnabled">
+			<value>true</value>
+		</property>
+		<property name="triggerProbability">
+			<value>2</value>
+		</property>
 		<property name="volume">
-			<value>-7.5</value>
+			<value>-21.5</value>
 		</property>
 		<property name="pitch">
 			<value>-0.5</value>
