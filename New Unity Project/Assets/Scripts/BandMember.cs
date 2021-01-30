@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class BandMember : MonoBehaviour
 {
+    public int mem;
+
     [SerializeField] LayerMask platformLayerMask;
 
     bool inAir = false;
@@ -52,6 +54,8 @@ public class BandMember : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             collision.GetComponent<Band>().AddBandMember(gameObject);
+            collision.GetComponent<PlayerMovement>().EnableBand(mem);
+
             Destroy(GetComponent<Collider2D>());
         }
     }
