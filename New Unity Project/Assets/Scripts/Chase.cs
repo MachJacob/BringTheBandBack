@@ -53,12 +53,17 @@ public class Chase : MonoBehaviour
 
         float distance = Vector3.Distance(transform.position, playerTransform.position);
 
-        if (distance >= maxDistance)
+        if (distance >= minDistance)
         {
             Vector3 moveForce = playerTransform.transform.position - transform.position;
             rb.MovePosition(Vector2.MoveTowards(transform.position, playerTransform.transform.position, moveSpeed * Time.deltaTime));
             moveForce.Normalize();
             rb.AddForce(moveForce * moveSpeed);
+        }
+
+        if (distance <= maxDistance)
+        {
+            //Do something like a long ranged attack maybe? idk arrow shot or something
         }
 
         //if(rb.rotation == 90f)
