@@ -29,8 +29,8 @@ public class BandMember : MonoBehaviour
         if (!IsGrounded() && !inAir)
         {
             inAir = true;
-            jump.setParameterByName("jumpState", 1);
-            jump.start();
+            //jump.setParameterByName("jumpState", 1);
+            //jump.start();
         }
 
         if (IsGrounded() && inAir)
