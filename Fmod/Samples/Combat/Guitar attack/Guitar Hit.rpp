@@ -1,4 +1,4 @@
-<REAPER_PROJECT 0.1 "6.15/x64" 1611953450
+<REAPER_PROJECT 0.1 "6.15/x64" 1612045011
   RIPPLE 0
   GROUPOVERRIDE 0 0 0
   AUTOXFADE 1
@@ -14,9 +14,9 @@
   TIMEMODE 1 5 -1 30 0 0 -1
   VIDEO_CONFIG 0 0 256
   PANMODE 3
-  CURSOR 0.67592250588448
-  ZOOM 248.54920281158925 0 0
-  VZOOMEX 6 0
+  CURSOR 0
+  ZOOM 16.88453074925279 0 0
+  VZOOMEX 5 0
   USE_REC_CFG 0
   RECMODE 1
   SMPTESYNC 0 30 100 40 1000 300 0 0 1 0 0
@@ -27,14 +27,14 @@
   >
   <APPLYFX_CFG
   >
-  RENDER_FILE ""
-  RENDER_PATTERN ""
-  RENDER_FMT 0 2 0
+  RENDER_FILE "C:\Users\Jon\Documents\Audio 4 Games\GameJam\BringTheBandBack\Fmod\Samples\Combat"
+  RENDER_PATTERN $track
+  RENDER_FMT 0 2 44100
   RENDER_1X 0
   RENDER_RANGE 1 0 0 18 1000
   RENDER_RESAMPLE 3 0 1
   RENDER_ADDTOPROJ 0
-  RENDER_STEMS 0
+  RENDER_STEMS 3
   RENDER_DITHER 0
   TIMELOCKMODE 1
   TEMPOENVLOCKMODE 1
@@ -43,6 +43,7 @@
   TAKELANE 1
   SAMPLERATE 44100 0 0
   <RENDER_CFG
+    ZXZhdxggAA==
   >
   LOCK 1
   <METRONOME 6 2
@@ -55,8 +56,8 @@
   GLOBAL_AUTO -1
   TEMPO 120 4 4
   PLAYRATE 1 0 0.25 4
-  SELECTION 0.30175111869843 0.22530750196149
-  SELECTION2 0.30175111869843 0.22530750196149
+  SELECTION 0.91207746479312 0
+  SELECTION2 0.91207746479312 0
   MASTERAUTOMODE 0
   MASTERTRACKHEIGHT 0 0
   MASTERPEAKCOL 16576
@@ -77,7 +78,7 @@
   >
   <TEMPOENVEX
     EGUID {AA925867-EEB6-488B-BF2E-77A24E8C6918}
-    ACT 1 -1
+    ACT 0 -1
     VIS 1 0 1
     LANEHEIGHT 0 0
     ARM 0
@@ -86,7 +87,7 @@
   <PROJBAY
   >
   <TRACK {97023D5A-86D8-450A-948D-F6A8E20D3563}
-    NAME 201111__abuseart__smashing-an-acoustic-guitar
+    NAME "Double Bass"
     PEAKCOL 16576
     BEAT -1
     AUTOMODE 0
@@ -110,30 +111,192 @@
     MIDIOUT -1
     MAINSEND 1 0
     <ITEM
-      POSITION 0
+      POSITION 0.01207004475873
       SNAPOFFS 0
-      LENGTH 0.57936214790099
+      LENGTH 4
       LOOP 1
       ALLTAKES 0
       FADEIN 1 0.01 0 1 0 0
-      FADEOUT 1 1.054001 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
       MUTE 0 0
+      BEAT 1
       SEL 0
-      IGUID {76498E85-5342-4F91-8B68-AC734F3720FE}
-      IID 4
-      NAME 201111__abuseart__smashing-an-acoustic-guitar.flac
+      IGUID {0A71BBA8-4D44-4CC1-9CCC-BDACEAF1458E}
+      IID 7
+      NAME SBJ3_Style1_80bpm_A7(13)_BASS_2bar.wav
       VOLPAN 1 0 1 -1
-      SOFFS 0.96114318316046
-      PLAYRATE 1 1 0 -1 0 0.0025
+      SOFFS 0
+      PLAYRATE 1.5 1 0 -1 0 0.0025
       CHANMODE 0
-      GUID {7B1F7D64-C04D-4E8E-A0A7-D6D55F5FA474}
-      <SOURCE FLAC
-        FILE "C:\Users\Jon\Downloads\201111__abuseart__smashing-an-acoustic-guitar.flac"
+      GUID {2BCAD7C3-09C7-4DD8-8FDF-72B505C4467B}
+      <SOURCE WAVE
+        FILE "C:\Users\Jon\Desktop\SessionBand_Jazz_Vol3_Sample_Pack\SBJ3_Style1_80bpm_A7(13)_BASS_2bar.wav"
+      >
+    >
+    <ITEM
+      POSITION 4.01530155283399
+      SNAPOFFS 0
+      LENGTH 4
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0 0
+      BEAT 1
+      SEL 0
+      IGUID {D217758A-3D19-4272-85B4-DFF66D6EF504}
+      IID 8
+      NAME SBJ3_Style1_80bpm_C7sus(13)_BASS_2bar.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1.5 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {B0FF3E5F-3C81-4257-9E38-ACE9C2B38AC3}
+      <SOURCE WAVE
+        FILE "C:\Users\Jon\Desktop\SessionBand_Jazz_Vol3_Sample_Pack\SBJ3_Style1_80bpm_C7sus(13)_BASS_2bar.wav"
+      >
+    >
+    <ITEM
+      POSITION 8.01530155283399
+      SNAPOFFS 0
+      LENGTH 4
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0 0
+      BEAT 1
+      SEL 0
+      IGUID {C1D1D073-9501-46D4-9930-52F56B44B58C}
+      IID 9
+      NAME SBJ3_Style1_80bpm_G7(13)_BASS_2bar.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1.5 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {CF09B955-7405-45C0-9C8E-B86113149096}
+      <SOURCE WAVE
+        FILE "C:\Users\Jon\Desktop\SessionBand_Jazz_Vol3_Sample_Pack\SBJ3_Style1_80bpm_G7(13)_BASS_2bar.wav"
+      >
+    >
+    <ITEM
+      POSITION 12.04476120241452
+      SNAPOFFS 0
+      LENGTH 4
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1.1 0.01 0.001351 1 1 0
+      MUTE 0 0
+      BEAT 1
+      SEL 0
+      IGUID {9FF96276-EB76-4BFD-95AF-ADA186061537}
+      IID 8
+      NAME SBJ3_Style1_80bpm_C7sus(13)_BASS_2bar.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1.5 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {0F65D437-3DB4-45D4-9BDA-172E8DE0F8D3}
+      <SOURCE WAVE
+        FILE "C:\Users\Jon\Desktop\SessionBand_Jazz_Vol3_Sample_Pack\SBJ3_Style1_80bpm_C7sus(13)_BASS_2bar.wav"
+      >
+    >
+    <ITEM
+      POSITION 16.0434098795522
+      SNAPOFFS 0
+      LENGTH 4
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0.01 0.001351 1 1 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0 0
+      BEAT 1
+      SEL 0
+      IGUID {0AFB9EFB-C20A-49DB-B425-9F0FEA73B590}
+      IID 8
+      NAME SBJ3_Style1_80bpm_C7sus(13)_BASS_2bar.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1.5 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {C4B6DCFA-2D53-4DAE-A09F-0BDD60AE8DBB}
+      <SOURCE WAVE
+        FILE "C:\Users\Jon\Desktop\SessionBand_Jazz_Vol3_Sample_Pack\SBJ3_Style1_80bpm_C7sus(13)_BASS_2bar.wav"
+      >
+    >
+    <ITEM
+      POSITION 20.06416947289836
+      SNAPOFFS 0
+      LENGTH 4
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1.1 0.01 0.024946 1 1 0
+      MUTE 0 0
+      BEAT 1
+      SEL 0
+      IGUID {2A609BA6-CFF3-4885-80B9-45AA5803DB0B}
+      IID 9
+      NAME SBJ3_Style1_80bpm_G7(13)_BASS_2bar.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1.5 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {A55E6C74-980E-446B-9CE6-F4AF0AD0200E}
+      <SOURCE WAVE
+        FILE "C:\Users\Jon\Desktop\SessionBand_Jazz_Vol3_Sample_Pack\SBJ3_Style1_80bpm_G7(13)_BASS_2bar.wav"
+      >
+    >
+    <ITEM
+      POSITION 24.0392232676968
+      SNAPOFFS 0
+      LENGTH 4
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0.01 0.024946 1 1 0
+      FADEOUT 1.1 0.01 0.031127 1 1 0
+      MUTE 0 0
+      BEAT 1
+      SEL 0
+      IGUID {7963B015-8BE4-42D1-95CB-2660CE487829}
+      IID 7
+      NAME SBJ3_Style1_80bpm_A7(13)_BASS_2bar.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1.5 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {CE893A20-043A-4F7D-9D3B-57F60CB528FA}
+      <SOURCE WAVE
+        FILE "C:\Users\Jon\Desktop\SessionBand_Jazz_Vol3_Sample_Pack\SBJ3_Style1_80bpm_A7(13)_BASS_2bar.wav"
+      >
+    >
+    <ITEM
+      POSITION 28.00809597043015
+      SNAPOFFS 0
+      LENGTH 4
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0.01 0.031127 1 1 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0 0
+      BEAT 1
+      SEL 0
+      IGUID {CB4FEB18-7A2C-4454-ADE7-FD79C861F385}
+      IID 58
+      NAME SBJ3_Style1_80bpm_Gmaj7(9)_BASS_2bar.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1.5 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {9C9971A3-C59A-4F86-A8C6-ADF1F5D23A08}
+      <SOURCE WAVE
+        FILE "C:\Users\Jon\Desktop\SessionBand_Jazz_Vol3_Sample_Pack\SBJ3_Style1_80bpm_Gmaj7(9)_BASS_2bar.wav"
       >
     >
   >
   <TRACK {6408048F-0A77-42B0-9177-B17CD93A3F35}
-    NAME IMPACT_LOW_THUD_10
+    NAME Piano
     PEAKCOL 16576
     BEAT -1
     AUTOMODE 0
@@ -145,7 +308,7 @@
     BUSCOMP 0 0 0 0 0
     SHOWINMIX 1 0.6667 0.5 1 0.5 -1 -1 -1
     FREEMODE 0
-    SEL 0
+    SEL 1
     REC 0 0 1 0 0 0 0
     VU 2
     TRACKHEIGHT 0 0 0 0 -1 0
@@ -157,30 +320,192 @@
     MIDIOUT -1
     MAINSEND 1 0
     <ITEM
-      POSITION 0
+      POSITION 0.00830383726861
       SNAPOFFS 0
-      LENGTH 0.20472916666667
+      LENGTH 4
       LOOP 1
       ALLTAKES 0
       FADEIN 1 0.01 0 1 0 0
       FADEOUT 1 0.01 0 1 0 0
       MUTE 0 0
+      BEAT 1
       SEL 0
-      IGUID {828D42D1-0F4D-4E68-9D2D-E2C145211DE9}
-      IID 5
-      NAME IMPACT_LOW_THUD_10.wav
+      IGUID {B106D9BF-D8CD-4D2D-98CE-62830722BD89}
+      IID 11
+      NAME SBJ3_Style1_80bpm_A7(13)_PIANO_2bar.wav
       VOLPAN 1 0 1 -1
       SOFFS 0
-      PLAYRATE 1 1 0 -1 0 0.0025
+      PLAYRATE 1.5 1 0 -1 0 0.0025
       CHANMODE 0
-      GUID {73854FF1-5FC6-4CF8-B289-E8785BFA882A}
+      GUID {DCF3DE9B-435F-40CA-BE48-FDE3D9AE9F46}
       <SOURCE WAVE
-        FILE "D:\Sample Libary\Combat\Punch\IMPACT_LOW_THUD_10.wav"
+        FILE "C:\Users\Jon\Desktop\SessionBand_Jazz_Vol3_Sample_Pack\SBJ3_Style1_80bpm_A7(13)_PIANO_2bar.wav"
+      >
+    >
+    <ITEM
+      POSITION 4.02736108971294
+      SNAPOFFS 0
+      LENGTH 4
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1.1 0.01 0.014158 1 1 0
+      MUTE 0 0
+      BEAT 1
+      SEL 0
+      IGUID {AEC4DA32-0CDB-49E2-8900-4E4F8086FCFC}
+      IID 12
+      NAME SBJ3_Style1_80bpm_C7sus(13)_PIANO_2bar.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1.5 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {3C02DE80-9AEB-4B97-A202-5570A44FEE14}
+      <SOURCE WAVE
+        FILE "C:\Users\Jon\Desktop\SessionBand_Jazz_Vol3_Sample_Pack\SBJ3_Style1_80bpm_C7sus(13)_PIANO_2bar.wav"
+      >
+    >
+    <ITEM
+      POSITION 8.0132029929664
+      SNAPOFFS 0
+      LENGTH 4
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0.01 0.014158 1 1 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0 0
+      BEAT 1
+      SEL 0
+      IGUID {37F431DE-3161-47DF-B92C-1CA85F1FF6F5}
+      IID 13
+      NAME SBJ3_Style1_80bpm_G7(13)_PIANO_2bar.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1.5 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {3B5C0753-FB47-4C14-B507-AE18AF9951AD}
+      <SOURCE WAVE
+        FILE "C:\Users\Jon\Desktop\SessionBand_Jazz_Vol3_Sample_Pack\SBJ3_Style1_80bpm_G7(13)_PIANO_2bar.wav"
+      >
+    >
+    <ITEM
+      POSITION 12.05682073929347
+      SNAPOFFS 0
+      LENGTH 4
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1.1 0.01 0.001351 1 1 0
+      MUTE 0 0
+      BEAT 1
+      SEL 0
+      IGUID {5A270ECA-DFA6-4459-AE33-68CB8EF4262A}
+      IID 12
+      NAME SBJ3_Style1_80bpm_C7sus(13)_PIANO_2bar.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1.5 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {AD9AA975-1370-42DF-81B0-6498B453A92E}
+      <SOURCE WAVE
+        FILE "C:\Users\Jon\Desktop\SessionBand_Jazz_Vol3_Sample_Pack\SBJ3_Style1_80bpm_C7sus(13)_PIANO_2bar.wav"
+      >
+    >
+    <ITEM
+      POSITION 16.05546941643115
+      SNAPOFFS 0
+      LENGTH 4
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0.01 0.001351 1 1 0
+      FADEOUT 1.1 0.01 0.014158 1 1 0
+      MUTE 0 0
+      BEAT 1
+      SEL 0
+      IGUID {C8CB916C-5DB7-47F9-AC2E-D6565D8D7142}
+      IID 12
+      NAME SBJ3_Style1_80bpm_C7sus(13)_PIANO_2bar.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1.5 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {F25453F0-3C1B-4D89-B341-1B5D7D1AFC52}
+      <SOURCE WAVE
+        FILE "C:\Users\Jon\Desktop\SessionBand_Jazz_Vol3_Sample_Pack\SBJ3_Style1_80bpm_C7sus(13)_PIANO_2bar.wav"
+      >
+    >
+    <ITEM
+      POSITION 20.06207091303077
+      SNAPOFFS 0
+      LENGTH 4
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0.01 0.014158 1 1 0
+      FADEOUT 1.1 0.01 0.026614 1 1 0
+      MUTE 0 0
+      BEAT 1
+      SEL 0
+      IGUID {4A599042-3932-4E00-A79F-804EC1178CA0}
+      IID 13
+      NAME SBJ3_Style1_80bpm_G7(13)_PIANO_2bar.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1.5 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {39301AC0-2BEA-4181-BE06-2680B1AAF70D}
+      <SOURCE WAVE
+        FILE "C:\Users\Jon\Desktop\SessionBand_Jazz_Vol3_Sample_Pack\SBJ3_Style1_80bpm_G7(13)_PIANO_2bar.wav"
+      >
+    >
+    <ITEM
+      POSITION 24.03545706020668
+      SNAPOFFS 0
+      LENGTH 4
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0.01 0.026614 1 1 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0 0
+      BEAT 1
+      SEL 0
+      IGUID {6966FD15-EC99-44D7-9ADE-993DD8D9DD8C}
+      IID 11
+      NAME SBJ3_Style1_80bpm_A7(13)_PIANO_2bar.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1.5 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {A7EAA592-7FB5-4931-A8B5-F0FF788D163F}
+      <SOURCE WAVE
+        FILE "C:\Users\Jon\Desktop\SessionBand_Jazz_Vol3_Sample_Pack\SBJ3_Style1_80bpm_A7(13)_PIANO_2bar.wav"
+      >
+    >
+    <ITEM
+      POSITION 28.04039778932929
+      SNAPOFFS 0
+      LENGTH 4
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0 0
+      BEAT 1
+      SEL 0
+      IGUID {1AE45BB6-F124-4E84-95EB-4283EF34BAB1}
+      IID 59
+      NAME SBJ3_Style1_80bpm_Gmaj7(9)_PIANO_2bar.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1.5 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {CF666124-EBA3-480A-8560-0CDD7B11AA50}
+      <SOURCE WAVE
+        FILE "C:\Users\Jon\Desktop\SessionBand_Jazz_Vol3_Sample_Pack\SBJ3_Style1_80bpm_Gmaj7(9)_PIANO_2bar.wav"
       >
     >
   >
   <TRACK {3F885B33-FA58-42C2-8413-A31D5584482C}
-    NAME PUNCH_DESIGNED_LIGHT_78
+    NAME Drums
     PEAKCOL 16576
     BEAT -1
     AUTOMODE 0
@@ -192,7 +517,7 @@
     BUSCOMP 0 0 0 0 0
     SHOWINMIX 1 0.6667 0.5 1 0.5 -1 -1 -1
     FREEMODE 0
-    SEL 0
+    SEL 1
     REC 0 0 1 0 0 0 0
     VU 2
     TRACKHEIGHT 0 0 0 0 -1 0
@@ -206,23 +531,628 @@
     <ITEM
       POSITION 0
       SNAPOFFS 0
-      LENGTH 0.14831069908952
+      LENGTH 4.00830383726861
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0 0
+      BEAT 1
+      SEL 0
+      IGUID {A8E0DE87-3E9F-4CFF-B249-652B85ED0609}
+      IID 14
+      NAME SBJ3_Style1_80bpm_DRUM-1_Fill_2bar.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1.5 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {C02B603E-E55D-4177-880F-1050D89E1AF1}
+      <SOURCE WAVE
+        FILE "C:\Users\Jon\Desktop\SessionBand_Jazz_Vol3_Sample_Pack\SBJ3_Style1_80bpm_DRUM-1_Fill_2bar.wav"
+      >
+    >
+    <ITEM
+      POSITION 4.00830383726861
+      SNAPOFFS 0
+      LENGTH 4
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0 0
+      BEAT 1
+      SEL 0
+      IGUID {EC9F01DA-7BC0-4B3F-B726-9EB5CDFFD9F8}
+      IID 28
+      NAME SBJ3_Style1_80bpm_DRUM-14_Alt-Pattern_2bar.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1.5 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {20B7B659-BDE1-4F2E-B0E9-6557FC5F1E29}
+      <SOURCE WAVE
+        FILE "C:\Users\Jon\Desktop\SessionBand_Jazz_Vol3_Sample_Pack\SBJ3_Style1_80bpm_DRUM-14_Alt-Pattern_2bar.wav"
+      >
+    >
+    <ITEM
+      POSITION 8.07548177277204
+      SNAPOFFS 0
+      LENGTH 1.99292095162135
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0 0
+      BEAT 1
+      SEL 0
+      IGUID {C32B3425-5C20-4378-A5C7-82B305F1D5CE}
+      IID 14
+      NAME SBJ3_Style1_80bpm_DRUM-1_Fill_2bar.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1.5 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {9375F6AA-D671-4502-914A-45235891C18B}
+      <SOURCE WAVE
+        FILE "C:\Users\Jon\Desktop\SessionBand_Jazz_Vol3_Sample_Pack\SBJ3_Style1_80bpm_DRUM-1_Fill_2bar.wav"
+      >
+    >
+    <ITEM
+      POSITION 10.06840272434056
+      SNAPOFFS 0
+      LENGTH 1.99292095162135
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1.1 0.01 0.046022 1 1 0
+      MUTE 0 0
+      BEAT 1
+      SEL 0
+      IGUID {E903997F-6692-4455-863B-08816B021A93}
+      IID 14
+      NAME SBJ3_Style1_80bpm_DRUM-1_Fill_2bar.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1.5 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {1CF899BC-8FA8-4E29-B9E1-5454C595B4A9}
+      <SOURCE WAVE
+        FILE "C:\Users\Jon\Desktop\SessionBand_Jazz_Vol3_Sample_Pack\SBJ3_Style1_80bpm_DRUM-1_Fill_2bar.wav"
+      >
+    >
+    <ITEM
+      POSITION 12.01530155283399
+      SNAPOFFS 0
+      LENGTH 1.99292095162135
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0.01 0.046022 1 1 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0 0
+      BEAT 1
+      SEL 0
+      IGUID {8229EDF3-429E-4DC1-A538-05971BC1CD82}
+      IID 14
+      NAME SBJ3_Style1_80bpm_DRUM-1_Fill_2bar.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1.5 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {41A2EFF5-3CAA-41B2-81B8-74E689F8C15A}
+      <SOURCE WAVE
+        FILE "C:\Users\Jon\Desktop\SessionBand_Jazz_Vol3_Sample_Pack\SBJ3_Style1_80bpm_DRUM-1_Fill_2bar.wav"
+      >
+    >
+    <ITEM
+      POSITION 14.00822250440251
+      SNAPOFFS 0
+      LENGTH 1.99292095162135
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0 0
+      BEAT 1
+      SEL 0
+      IGUID {29012A22-B2CB-4990-BE5D-AF708A043006}
+      IID 14
+      NAME SBJ3_Style1_80bpm_DRUM-1_Fill_2bar.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1.5 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {E4E09B8C-7331-427E-A9F5-D6B71489E153}
+      <SOURCE WAVE
+        FILE "C:\Users\Jon\Desktop\SessionBand_Jazz_Vol3_Sample_Pack\SBJ3_Style1_80bpm_DRUM-1_Fill_2bar.wav"
+      >
+    >
+    <ITEM
+      POSITION 16.01395022997167
+      SNAPOFFS 0
+      LENGTH 1.99292095162135
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0 0
+      BEAT 1
+      SEL 0
+      IGUID {B009A0B4-F21D-4307-B689-5E5CFFD0D0FC}
+      IID 14
+      NAME SBJ3_Style1_80bpm_DRUM-1_Fill_2bar.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1.5 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {10EDA57F-5148-46E7-BCE7-786F38107AF6}
+      <SOURCE WAVE
+        FILE "C:\Users\Jon\Desktop\SessionBand_Jazz_Vol3_Sample_Pack\SBJ3_Style1_80bpm_DRUM-1_Fill_2bar.wav"
+      >
+    >
+    <ITEM
+      POSITION 18.00687118154019
+      SNAPOFFS 0
+      LENGTH 1.99292095162135
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0 0
+      BEAT 1
+      SEL 0
+      IGUID {496C301E-58F9-4CD4-928D-95C020C94FD3}
+      IID 14
+      NAME SBJ3_Style1_80bpm_DRUM-1_Fill_2bar.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1.5 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {72826CBB-CCB4-4325-B234-484A6E8AC110}
+      <SOURCE WAVE
+        FILE "C:\Users\Jon\Desktop\SessionBand_Jazz_Vol3_Sample_Pack\SBJ3_Style1_80bpm_DRUM-1_Fill_2bar.wav"
+      >
+    >
+    <ITEM
+      POSITION 19.99979213316154
+      SNAPOFFS 0
+      LENGTH 4.00830383726861
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0 0
+      BEAT 1
+      SEL 0
+      IGUID {FE5BD109-31FE-4088-BF3F-F15A093E5D66}
+      IID 14
+      NAME SBJ3_Style1_80bpm_DRUM-1_Fill_2bar.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1.5 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {ED104743-0960-4E1D-9328-D789EE8A2BAD}
+      <SOURCE WAVE
+        FILE "C:\Users\Jon\Desktop\SessionBand_Jazz_Vol3_Sample_Pack\SBJ3_Style1_80bpm_DRUM-1_Fill_2bar.wav"
+      >
+    >
+    <ITEM
+      POSITION 24.01884938573928
+      SNAPOFFS 0
+      LENGTH 1.99292095162135
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0 0
+      BEAT 1
+      SEL 0
+      IGUID {779405BE-9763-44A0-9DBD-EF28B154C314}
+      IID 14
+      NAME SBJ3_Style1_80bpm_DRUM-1_Fill_2bar.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1.5 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {2145D7AF-6CEB-477B-BF22-85080F65E1F3}
+      <SOURCE WAVE
+        FILE "C:\Users\Jon\Desktop\SessionBand_Jazz_Vol3_Sample_Pack\SBJ3_Style1_80bpm_DRUM-1_Fill_2bar.wav"
+      >
+    >
+    <ITEM
+      POSITION 26.0117703373078
+      SNAPOFFS 0
+      LENGTH 1.99292095162133
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1.1 0.01 0.050109 1 1 0
+      MUTE 0 0
+      BEAT 1
+      SEL 0
+      IGUID {F9FCB3DA-C6CF-4AB3-A207-33067F2CB3F8}
+      IID 14
+      NAME SBJ3_Style1_80bpm_DRUM-1_Fill_2bar.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1.5 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {B4823513-A959-47DE-B13A-20F5DF8AB101}
+      <SOURCE WAVE
+        FILE "C:\Users\Jon\Desktop\SessionBand_Jazz_Vol3_Sample_Pack\SBJ3_Style1_80bpm_DRUM-1_Fill_2bar.wav"
+      >
+    >
+    <ITEM
+      POSITION 27.95458203786984
+      SNAPOFFS 0
+      LENGTH 4.00830383726862
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0.01 0.050109 1 1 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0 0
+      BEAT 1
+      SEL 0
+      IGUID {B629068B-5C6C-4D28-8FB4-E9F185D8A672}
+      IID 14
+      NAME SBJ3_Style1_80bpm_DRUM-1_Fill_2bar.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1.5 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {616645E0-AAF9-4DC1-84DA-BDC80F4B2500}
+      <SOURCE WAVE
+        FILE "C:\Users\Jon\Desktop\SessionBand_Jazz_Vol3_Sample_Pack\SBJ3_Style1_80bpm_DRUM-1_Fill_2bar.wav"
+      >
+    >
+  >
+  <TRACK {6955751B-9A3A-4063-859D-0ACA177096DC}
+    NAME Cymbols
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 -1 -1 -1
+    FREEMODE 0
+    SEL 1
+    REC 0 0 1 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0 0 -1 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {6955751B-9A3A-4063-859D-0ACA177096DC}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <ITEM
+      POSITION 23.51062186470481
+      SNAPOFFS 0
+      LENGTH 4.8
       LOOP 1
       ALLTAKES 0
       FADEIN 1 0.01 0 1 0 0
       FADEOUT 1 0.01 0 1 0 0
       MUTE 0 0
       SEL 0
-      IGUID {1BBA0A2B-C013-4C4C-A7E8-35541A71E4F2}
-      IID 6
-      NAME PUNCH_DESIGNED_LIGHT_78.wav
+      IGUID {5468971F-2CF5-4095-88A3-5F46B73E6016}
+      IID 55
+      NAME SBJ3_CRASH-CYMBAL-1.wav
       VOLPAN 1 0 1 -1
-      SOFFS 0.03621013424381
+      SOFFS 0
       PLAYRATE 1 1 0 -1 0 0.0025
       CHANMODE 0
-      GUID {99105257-3DF7-45C9-89A4-47773E508B9D}
+      GUID {FD9655C1-808F-4B2B-8759-9DBE3E68D6F0}
       <SOURCE WAVE
-        FILE "D:\Sample Libary\Combat\Punch\PUNCH_DESIGNED_LIGHT_78.wav"
+        FILE "C:\Users\Jon\Desktop\SessionBand_Jazz_Vol3_Sample_Pack\SBJ3_CRASH-CYMBAL-1.wav"
+      >
+    >
+  >
+  <TRACK {A21DDBB6-28B3-4D3E-ACAD-62C644435ABB}
+    NAME Cymbols2
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 -1 -1 -1
+    FREEMODE 0
+    SEL 1
+    REC 0 0 1 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0 0 -1 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {A21DDBB6-28B3-4D3E-ACAD-62C644435ABB}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <ITEM
+      POSITION 23.63805070949996
+      SNAPOFFS 0
+      LENGTH 4.8
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {8886B304-BC55-425D-81C4-8BCDDD58A1C7}
+      IID 56
+      NAME SBJ3_CRASH-CYMBAL-2.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {B258CAE8-74FC-41FF-8900-542B274227D6}
+      <SOURCE WAVE
+        FILE "C:\Users\Jon\Desktop\SessionBand_Jazz_Vol3_Sample_Pack\SBJ3_CRASH-CYMBAL-2.wav"
+      >
+    >
+  >
+  <TRACK {77E76166-3C12-44C4-A63E-AF7C98BCE117}
+    NAME "Sax Solo"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 -1 -1 -1
+    FREEMODE 0
+    SEL 1
+    REC 0 0 1 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0 0 -1 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {77E76166-3C12-44C4-A63E-AF7C98BCE117}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <ITEM
+      POSITION 0.08968144282699
+      SNAPOFFS 0
+      LENGTH 4
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1.1 0.01 0.08391 1 1 0
+      MUTE 0 0
+      BEAT 1
+      SEL 0
+      IGUID {E2B26C91-D554-43E1-BB44-512B306E8C75}
+      IID 42
+      NAME SBJ3_Style1_80bpm_A7(13)_TENOR_2bar.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1.5 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {0030509C-066F-406E-A61D-403A5261CE6E}
+      <SOURCE WAVE
+        FILE "C:\Users\Jon\Desktop\SessionBand_Jazz_Vol3_Sample_Pack\SBJ3_Style1_80bpm_A7(13)_TENOR_2bar.wav"
+      >
+    >
+    <ITEM
+      POSITION 4.0057711127447
+      SNAPOFFS 0
+      LENGTH 4
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0.01 0.08391 1 1 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0 0
+      BEAT 1
+      SEL 0
+      IGUID {8EF4BE68-4DA9-4657-B3F6-E059C168D156}
+      IID 43
+      NAME SBJ3_Style1_80bpm_Cmaj7(#11)_TENOR_2bar.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1.5 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {9F2FA592-058F-4A87-A260-6304A4B50659}
+      <SOURCE WAVE
+        FILE "C:\Users\Jon\Desktop\SessionBand_Jazz_Vol3_Sample_Pack\SBJ3_Style1_80bpm_Cmaj7(#11)_TENOR_2bar.wav"
+      >
+    >
+    <ITEM
+      POSITION 8.01154222548939
+      SNAPOFFS 0
+      LENGTH 4
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0 0
+      BEAT 1
+      SEL 0
+      IGUID {F888AD8B-F54B-440F-A539-D391211E29F5}
+      IID 44
+      NAME SBJ3_Style1_80bpm_G7(13)_TENOR_2bar.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1.5 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {4A0A08A2-5034-4585-8B22-CDE09001D806}
+      <SOURCE WAVE
+        FILE "C:\Users\Jon\Desktop\SessionBand_Jazz_Vol3_Sample_Pack\SBJ3_Style1_80bpm_G7(13)_TENOR_2bar.wav"
+      >
+    >
+    <ITEM
+      POSITION 12.01731333823409
+      SNAPOFFS 0
+      LENGTH 4
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0 0
+      BEAT 1
+      SEL 0
+      IGUID {4620BB74-819C-4B77-A138-2ED11E73D4BE}
+      IID 45
+      NAME SBJ3_Style1_80bpm_C7sus(13)_TENOR_2bar.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1.5 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {9FD46E24-17FD-42B0-974D-C2E04CB83F31}
+      <SOURCE WAVE
+        FILE "C:\Users\Jon\Desktop\SessionBand_Jazz_Vol3_Sample_Pack\SBJ3_Style1_80bpm_C7sus(13)_TENOR_2bar.wav"
+      >
+    >
+    <ITEM
+      POSITION 16.08287207956892
+      SNAPOFFS 0
+      LENGTH 4
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0 0
+      BEAT 1
+      SEL 0
+      IGUID {190BDF7A-0CD6-4568-B4D8-1DDD6A847D89}
+      IID 54
+      NAME SBJ3_Style1_80bpm_Amaj7(9)_TENOR_2bar.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1.5 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {DD110ACB-01A0-490C-BCBE-06DABBBFAB55}
+      <SOURCE WAVE
+        FILE "C:\Users\Jon\Desktop\SessionBand_Jazz_Vol3_Sample_Pack\SBJ3_Style1_80bpm_Amaj7(9)_TENOR_2bar.wav"
+      >
+    >
+    <ITEM
+      POSITION 24.00809597043015
+      SNAPOFFS 0
+      LENGTH 4
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0 0
+      BEAT 1
+      SEL 0
+      IGUID {0F814A6A-8363-4E49-A391-FB3FCF770608}
+      IID 46
+      NAME SBJ3_Style1_80bpm_Amaj7(#11)_TENOR_2bar.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1.5 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {06A8ABBC-3478-4042-BEF8-E2093E371727}
+      <SOURCE WAVE
+        FILE "C:\Users\Jon\Desktop\SessionBand_Jazz_Vol3_Sample_Pack\SBJ3_Style1_80bpm_Amaj7(#11)_TENOR_2bar.wav"
+      >
+    >
+  >
+  <TRACK {94C2D25D-C7F3-4FDF-B8E7-8DAE8A6BEE0F}
+    NAME "Sax Jam"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 -1 -1 -1
+    FREEMODE 0
+    SEL 1
+    REC 0 0 1 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0 0 -1 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {94C2D25D-C7F3-4FDF-B8E7-8DAE8A6BEE0F}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <ITEM
+      POSITION 4.0057711127447
+      SNAPOFFS 0
+      LENGTH 2.09256699921662
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0 0
+      BEAT 1
+      SEL 0
+      IGUID {D6C58397-CA7C-405F-91F7-505A035D2C70}
+      IID 43
+      NAME SBJ3_Style1_80bpm_Cmaj7(#11)_TENOR_2bar.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1.5 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {7B362ED8-366B-4028-933C-942A6224786A}
+      <SOURCE WAVE
+        FILE "C:\Users\Jon\Desktop\SessionBand_Jazz_Vol3_Sample_Pack\SBJ3_Style1_80bpm_Cmaj7(#11)_TENOR_2bar.wav"
+      >
+    >
+    <ITEM
+      POSITION 12.01154222548939
+      SNAPOFFS 0
+      LENGTH 4
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0 0
+      BEAT 1
+      SEL 0
+      IGUID {359F0E05-4063-4B94-BFE5-A4AC443FC99C}
+      IID 54
+      NAME SBJ3_Style1_80bpm_Amaj7(9)_TENOR_2bar.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1.5 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {E7DC3456-2FCB-4928-99B7-8E306CCA3C0D}
+      <SOURCE WAVE
+        FILE "C:\Users\Jon\Desktop\SessionBand_Jazz_Vol3_Sample_Pack\SBJ3_Style1_80bpm_Amaj7(9)_TENOR_2bar.wav"
+      >
+    >
+    <ITEM
+      POSITION 20.06416947289836
+      SNAPOFFS 0
+      LENGTH 1.87994719113114
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1 0.01 0 1 0 0
+      MUTE 0 0
+      BEAT 1
+      SEL 0
+      IGUID {26F4EB32-36D2-473C-9261-F8CF638D5D11}
+      IID 46
+      NAME SBJ3_Style1_80bpm_Amaj7(#11)_TENOR_2bar.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1.5 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {C1D492B4-C1CD-4719-B00B-EBB939645C42}
+      <SOURCE WAVE
+        FILE "C:\Users\Jon\Desktop\SessionBand_Jazz_Vol3_Sample_Pack\SBJ3_Style1_80bpm_Amaj7(#11)_TENOR_2bar.wav"
       >
     >
   >
