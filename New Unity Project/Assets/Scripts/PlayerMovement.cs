@@ -134,7 +134,7 @@ public class PlayerMovement : MonoBehaviour
 
     public void EnableBand(int _idx)
     {
-        band[_idx] = true;
+        band[_idx] = true;          //0 drums index refers to charactor
     }
 
 }
