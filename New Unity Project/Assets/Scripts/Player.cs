@@ -28,16 +28,18 @@ public class Player : MonoBehaviour
 
         damageTaken.start();
 
-        if (health == 0)
+        if (health <= 0)
         {
             alive = false;
             Debug.Log("IM DED LADS");
+            //Destroy(this.gameObject);
         }
     }
 
     public void Update()
     {
-        //something something update player stats
+        //Update for player stats & stuff
+
 
 
 

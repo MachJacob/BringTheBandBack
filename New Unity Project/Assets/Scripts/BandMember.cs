@@ -8,16 +8,16 @@ public class BandMember : MonoBehaviour
 
     bool inAir = false;
 
-    FMOD.Studio.EventInstance footstep;
     FMOD.Studio.EventInstance jump;
+
+    private float velocity;
 
     // Start is called before the first frame update
     void Start()
     {
         //Fmod Instances
-        footstep = FMODUnity.RuntimeManager.CreateInstance("event:/Player/Footsteps");
         jump = FMODUnity.RuntimeManager.CreateInstance("event:/Player/Jump");
-        footstep.start();
+
         //Fmod Parameters
         jump.setParameterByName("jumpState", 0);
 
@@ -29,13 +29,19 @@ public class BandMember : MonoBehaviour
         if (!IsGrounded() && !inAir)
         {
             inAir = true;
-            jump.setParameterByName("jumpState", 1);
-            jump.start();
+            //jump.setParameterByName("jumpState", 1);
+            //jump.start();
         }
 
         if (IsGrounded() && inAir)
         {
+            //getting velocity
             inAir = false;
+
+            if (velocity < 0) { velocity = 0 - velocity; }
+            if (velocity > 10) { velocity = 10; }
+            Debug.Log(velocity);
+            jump.setParameterByName("downVelocity", velocity);
             jump.setParameterByName("jumpState", 0);
             jump.start();
         }
@@ -57,5 +63,10 @@ public class BandMember : MonoBehaviour
 
 
         return raycastHit.collider != null;
+    }
+
+    public void SetVel(float _vel)
+    {
+        velocity = _vel;
     }
 }

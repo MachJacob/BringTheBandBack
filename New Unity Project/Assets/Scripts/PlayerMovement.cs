@@ -30,7 +30,7 @@ public class PlayerMovement : MonoBehaviour
         //Fmod Instances
         footstep = FMODUnity.RuntimeManager.CreateInstance("event:/Player/Footsteps"); 
         jump = FMODUnity.RuntimeManager.CreateInstance("event:/Player/Jump");
-        footstep.start();
+        jump = FMODUnity.RuntimeManager.CreateInstance("event:/Player/Land");
         //Fmod Parameters
         jump.setParameterByName("jumpState", 0);
     }
@@ -79,6 +79,14 @@ public class PlayerMovement : MonoBehaviour
 
         if(IsGrounded() && inAir)
         {
+            //getting velocity
+            Vector3 playerVelocity = rb.GetRelativePointVelocity(new Vector3(0.0f, 0.0f, 0.0f));           
+            if(playerVelocity.y < 0) { playerVelocity.y = 0 - playerVelocity.y; }
+            if(playerVelocity.y > 10) { playerVelocity.y = 10; }
+            Debug.Log(playerVelocity.y);
+            jump.setParameterByName("downVelocity", playerVelocity.y);
+            GetComponent<Band>().SetBandVel(playerVelocity.y);
+
             inAir = false;
             jump.setParameterByName("jumpState", 0);
             jump.start();
@@ -91,7 +99,6 @@ public class PlayerMovement : MonoBehaviour
         float extraHeight = .75f;
         RaycastHit2D raycastHit = Physics2D.CircleCast(transform.position, 0.5f, Vector2.down, extraHeight, platformLayerMask);
 
-
         return raycastHit.collider != null;
     }
 
@@ -99,6 +106,5 @@ public class PlayerMovement : MonoBehaviour
     {
         Gizmos.DrawWireSphere(transform.position + (.75f * Vector3.down), 0.5f);
     }
-
 
 }

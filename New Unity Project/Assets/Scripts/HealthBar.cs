@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class HealthBar : MonoBehaviour
 {
     private Image backBar, fullBar;
-    public float fill;
+    public float fill = 100f;
 
     void Start()
     {

@@ -67,4 +67,12 @@ public class Band : MonoBehaviour
         count++;
         bandMem.Add(temp);
     }
+
+    public void SetBandVel(float _vel)
+    {
+        foreach (Memb bMem in bandMem)
+        {
+            bMem.tra.GetComponent<BandMember>().SetVel(_vel);
+        }
+    }
 }
