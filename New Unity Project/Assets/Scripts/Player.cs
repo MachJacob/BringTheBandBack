@@ -7,8 +7,8 @@ public class Player : MonoBehaviour
 {
     [Header("The Players Stats")]
     [SerializeField] 
-    float maxHealth = 100;
-    private float health;
+    public float maxHealth = 100f;
+    public float health;
     private bool alive;
 
     FMOD.Studio.EventInstance damageTaken;
@@ -16,7 +16,7 @@ public class Player : MonoBehaviour
     void Start()
     {
         health = maxHealth;
-
+        alive = true;
         damageTaken = FMODUnity.RuntimeManager.CreateInstance("event:/Player/Damage");
     }
 
@@ -24,10 +24,16 @@ public class Player : MonoBehaviour
     {
         health -= damage;
 
-        damageTaken.start(); 
+        damageTaken.start();
+
+        if (health == 0)
+        {
+            alive = false;
+            Debug.Log("IM DED LADS");
+        }
     }
 
-    void Update()
+    public void Update()
     {
         //something something update player stats
     }

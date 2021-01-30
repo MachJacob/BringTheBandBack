@@ -99,7 +99,7 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_Size: {x: 1, y: 2}
+  m_Size: {x: 1.2, y: 2}
   m_Direction: 0
 --- !u!50 &7787182521341860160
 Rigidbody2D:
@@ -136,6 +136,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerTransform: {fileID: 0}
   moveSpeed: 2
+  moveCooldown: 1
+  timer: 0
   rotationSpeed: 5
   maxDistance: 5
   minDistance: 1

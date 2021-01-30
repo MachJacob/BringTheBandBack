@@ -7,7 +7,7 @@ public class Enemies : MonoBehaviour
     [SerializeField]
     Rigidbody2D enemy_rigidbody;
 
-    float enemy_health = 10f;
+    float enemy_health = 50f;
     //public float walking_distance = 10.0f;
 
     void Start()
@@ -15,9 +15,9 @@ public class Enemies : MonoBehaviour
         enemy_rigidbody = GetComponent<Rigidbody2D>();
     }
 
-    public void DealDamage(float _dam)
+    public void DealDamage(float damage)
     {
-        enemy_health -= _dam;
+        enemy_health -= damage;
     }
 
     // Update is called once per frame
