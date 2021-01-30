@@ -66,8 +66,8 @@
 			<destination>{94681f47-3340-4891-897b-084eee11b7b0}</destination>
 		</relationship>
 		<relationship name="modules">
-			<destination>{e1275107-bdee-448d-ba5f-2dc1c6d1a01d}</destination>
 			<destination>{b92d01ec-05d1-464f-8659-6aa778b0fc24}</destination>
+			<destination>{fbd3b0c3-7518-4916-96f3-bf87077fcc2a}</destination>
 		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{fba36896-4fcf-4037-af05-91240095a4a2}</destination>
@@ -80,8 +80,8 @@
 	</object>
 	<object class="ParameterProxy" id="{2b701441-e088-4882-b90a-42b7d82e483d}">
 		<relationship name="modules">
-			<destination>{e1275107-bdee-448d-ba5f-2dc1c6d1a01d}</destination>
 			<destination>{b92d01ec-05d1-464f-8659-6aa778b0fc24}</destination>
+			<destination>{fbd3b0c3-7518-4916-96f3-bf87077fcc2a}</destination>
 		</relationship>
 		<relationship name="preset">
 			<destination>{ed023e00-f575-4365-bd71-0877073bc276}</destination>
@@ -109,23 +109,6 @@
 			<destination>{d271abc7-4e86-4735-9a80-b70b69805025}</destination>
 		</relationship>
 	</object>
-	<object class="SingleSound" id="{e1275107-bdee-448d-ba5f-2dc1c6d1a01d}">
-		<property name="isAsync">
-			<value>true</value>
-		</property>
-		<property name="start">
-			<value>1</value>
-		</property>
-		<property name="pitch">
-			<value>-0.5</value>
-		</property>
-		<relationship name="modulators">
-			<destination>{3d7acb0a-ffa6-4275-8421-23dfb1744d74}</destination>
-		</relationship>
-		<relationship name="audioFile">
-			<destination>{4a09b71c-74f6-46ef-a713-8ee654026f4c}</destination>
-		</relationship>
-	</object>
 	<object class="EventSound" id="{b92d01ec-05d1-464f-8659-6aa778b0fc24}">
 		<relationship name="automators">
 			<destination>{d271abc7-4e86-4735-9a80-b70b69805025}</destination>
@@ -134,9 +117,17 @@
 			<destination>{4df747cf-31e5-40f9-bec1-883147b3712e}</destination>
 		</relationship>
 	</object>
+	<object class="SingleSound" id="{fbd3b0c3-7518-4916-96f3-bf87077fcc2a}">
+		<property name="start">
+			<value>1</value>
+		</property>
+		<relationship name="audioFile">
+			<destination>{760c13af-913d-4a83-aeb4-d47ef337a10a}</destination>
+		</relationship>
+	</object>
 	<object class="EventMixerGroup" id="{fba36896-4fcf-4037-af05-91240095a4a2}">
 		<property name="volume">
-			<value>-11</value>
+			<value>-14</value>
 		</property>
 		<property name="name">
 			<value>Audio 1</value>
@@ -158,14 +149,6 @@
 	</object>
 	<object class="MixerBusPanner" id="{39f634ae-5867-479e-bb94-b33f68ea99b3}" />
 	<object class="MixerBusFader" id="{d078a9e4-4dd0-4f7b-9381-90f070902f6a}" />
-	<object class="RandomizerModulator" id="{3d7acb0a-ffa6-4275-8421-23dfb1744d74}">
-		<property name="nameOfPropertyBeingModulated">
-			<value>pitch</value>
-		</property>
-		<property name="amount">
-			<value>2</value>
-		</property>
-	</object>
 	<object class="Automator" id="{d271abc7-4e86-4735-9a80-b70b69805025}">
 		<property name="nameOfPropertyBeingAutomated">
 			<value>volume</value>
