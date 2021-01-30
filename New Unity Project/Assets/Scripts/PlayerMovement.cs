@@ -32,7 +32,7 @@ public class PlayerMovement : MonoBehaviour
         jump = FMODUnity.RuntimeManager.CreateInstance("event:/Player/Jump");
         footstep.start();
         //Fmod Parameters
-        //jump.setParameterByName("jumpState", 0);
+        jump.setParameterByName("jumpState", 0);
     }
 
     private void Update()
