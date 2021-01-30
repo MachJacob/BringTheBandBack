@@ -14,17 +14,20 @@ public class Band : MonoBehaviour
     {
         public Transform tra;
         public SpriteRenderer spr;
+        public int idx;
     }
 
     private List<Pos> positions;
     private SpriteRenderer spr;
     private List<Memb> bandMem;
+    private int count;
 
     void Start()
     {
         positions = new List<Pos>();
         spr = GetComponent<SpriteRenderer>();
         bandMem = new List<Memb>();
+        count = 0;
     }
 
     void Update()
@@ -46,10 +49,15 @@ public class Band : MonoBehaviour
             positions.RemoveAt(0);
         }
 
+        //for (int i = 0; i > bandMem.Count; i++)
+        //{
+        //    bandMem[i].tra.position = positions[90 - (10 * i)].pos;
+        //    bandMem[i].spr.flipX = positions[90 - (10 * i)].flip;
+        //}
         foreach (Memb bMem in bandMem)  //band follows player
         {
-            bMem.tra.position = positions[5].pos;
-            bMem.spr.flipX = positions[5].flip;
+            bMem.tra.position = positions[90 - (10 * bMem.idx)].pos;
+            bMem.spr.flipX = positions[90 - (10 * bMem.idx)].flip;
         }
     }
 
@@ -58,9 +66,10 @@ public class Band : MonoBehaviour
         Memb temp = new Memb
         {
             tra = _mem.transform,
-            spr = _mem.GetComponent<SpriteRenderer>()
+            spr = _mem.GetComponent<SpriteRenderer>(),
+            idx = count
         };
-
+        count++;
         bandMem.Add(temp);
     }
 }
