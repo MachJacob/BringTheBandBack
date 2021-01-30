@@ -18,7 +18,8 @@ public class PlayerMovement : MonoBehaviour
     FMOD.Studio.EventInstance footstep;
     FMOD.Studio.EventInstance jump;
 
-    public GameObject drumStick;
+    public GameObject drumStick; 
+    public GameObject cymbol;
 
     void Start()
     {
@@ -41,6 +42,14 @@ public class PlayerMovement : MonoBehaviour
             int dir = 1;
             if (spr.flipX) dir = -1;
             GameObject stick = Instantiate(drumStick, transform.position + Vector3.right * dir * 1.15f, Quaternion.identity);
+            stick.GetComponent<Rigidbody2D>().AddForce(Vector2.right * dir * 100);
+            stick.GetComponent<SpriteRenderer>().flipX = spr.flipX;
+        }
+        if (Input.GetButtonDown("Fire2"))
+        {
+            int dir = 1;
+            if (spr.flipX) dir = -1;
+            GameObject stick = Instantiate(cymbol, transform.position + Vector3.right * dir * 1.55f, Quaternion.identity);
             stick.GetComponent<Rigidbody2D>().AddForce(Vector2.right * dir * 100);
             stick.GetComponent<SpriteRenderer>().flipX = spr.flipX;
         }
