@@ -8,9 +8,7 @@ public class BandMember : MonoBehaviour
 
     bool inAir = false;
 
-    FMOD.Studio.EventInstance footstep;
     FMOD.Studio.EventInstance jump;
-    FMOD.Studio.EventInstance land;
 
     private float velocity;
 
@@ -18,9 +16,8 @@ public class BandMember : MonoBehaviour
     void Start()
     {
         //Fmod Instances
-        footstep = FMODUnity.RuntimeManager.CreateInstance("event:/Player/Footsteps");
         jump = FMODUnity.RuntimeManager.CreateInstance("event:/Player/Jump");
-        jump = FMODUnity.RuntimeManager.CreateInstance("event:/Player/Land");
+
         //Fmod Parameters
         jump.setParameterByName("jumpState", 0);
 
@@ -39,13 +36,12 @@ public class BandMember : MonoBehaviour
         if (IsGrounded() && inAir)
         {
             //getting velocity
-            
+            inAir = false;
+
             if (velocity < 0) { velocity = 0 - velocity; }
             if (velocity > 10) { velocity = 10; }
             Debug.Log(velocity);
-            land.setParameterByName("downVelocity", velocity);
-
-            inAir = false;
+            jump.setParameterByName("downVelocity", velocity);
             jump.setParameterByName("jumpState", 0);
             jump.start();
         }

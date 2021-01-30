@@ -17,7 +17,6 @@ public class PlayerMovement : MonoBehaviour
 
     FMOD.Studio.EventInstance footstep;
     FMOD.Studio.EventInstance jump;
-    FMOD.Studio.EventInstance land;
 
     public GameObject drumStick;
 
@@ -85,7 +84,7 @@ public class PlayerMovement : MonoBehaviour
             if(playerVelocity.y < 0) { playerVelocity.y = 0 - playerVelocity.y; }
             if(playerVelocity.y > 10) { playerVelocity.y = 10; }
             Debug.Log(playerVelocity.y);
-            land.setParameterByName("downVelocity", playerVelocity.y);
+            jump.setParameterByName("downVelocity", playerVelocity.y);
             GetComponent<Band>().SetBandVel(playerVelocity.y);
 
             inAir = false;
@@ -100,7 +99,6 @@ public class PlayerMovement : MonoBehaviour
         float extraHeight = .75f;
         RaycastHit2D raycastHit = Physics2D.CircleCast(transform.position, 0.5f, Vector2.down, extraHeight, platformLayerMask);
 
-
         return raycastHit.collider != null;
     }
 
@@ -108,6 +106,5 @@ public class PlayerMovement : MonoBehaviour
     {
         Gizmos.DrawWireSphere(transform.position + (.75f * Vector3.down), 0.5f);
     }
-
 
 }
