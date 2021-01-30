@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-    float moveSpeed = 7f;
+    public GameObject playersHealth;
+
+    public float moveSpeed;
 
     Rigidbody2D rb;
 
@@ -12,23 +14,37 @@ public class Bullet : MonoBehaviour
 
     Vector2 moveDirection;
 
+    public float damage = 10f;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         target = GameObject.FindObjectOfType<Player>();
         moveDirection = (target.transform.position - transform.position).normalized * moveSpeed;
-        rb.velocity = moveDirection.normalized;
-        Destroy(gameObject, 3f);
+        rb.velocity = new Vector2(moveDirection.x, moveDirection.y);
+        //rb.velocity = moveDirection.normalized;
+        Destroy(gameObject, 7f);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.gameObject.name.Equals("Player"))
+        if (collision.gameObject.tag == "Player")
         {
+            //playersHealth.GetComponent<Player>().DealDamage(10f);
+            collision.gameObject.GetComponent<Player>().DealDamage(damage / 2);
             Debug.Log("HIT");
             Destroy(gameObject);
         }
     }
+
+    //public void OnCollisionEnter2D(Collision2D collision)
+    //{
+    //    if (collision.gameObject.tag == "Player")
+    //    {
+    //        //playersHealth.GetComponent<Player>().DealDamage(10.0f);
+    //        //collision.gameObject.GetComponent<Player>().DealDamage(10f);
+    //    }
+    //}
 
     // Update is called once per frame
     void Update()

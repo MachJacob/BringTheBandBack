@@ -56,7 +56,7 @@ public class Chase : MonoBehaviour
 
         if (distance >= maxDistance)
         {
-            enemyShooter.GetComponent<RangedEnemy>().Shoot();
+            
         }
     }
 }
