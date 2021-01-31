@@ -6,9 +6,13 @@ using UnityEngine.SceneManagement;
 public class GameOver : MonoBehaviour
 {
     FMOD.Studio.EventInstance click;
+    FMOD.Studio.EventInstance death;
+
     void Start()
     {
         click = FMODUnity.RuntimeManager.CreateInstance("event:/UI/Click");
+        death = FMODUnity.RuntimeManager.CreateInstance("event:/Player/Death");
+        death.start(); 
     }
     public void OnReplayPressed()
     {
