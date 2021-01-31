@@ -21,6 +21,10 @@ public class PlayerMovement : MonoBehaviour
     FMOD.Studio.EventInstance jump;
     FMOD.Studio.EventInstance music;
 
+    public Sprite still;
+    public Sprite moving;
+    int spriteNum = 0;
+
     public GameObject drumStick; 
     public GameObject cymbol;
 
@@ -31,6 +35,9 @@ public class PlayerMovement : MonoBehaviour
 
         band = new bool[5];
 
+        //walking
+        InvokeRepeating("walking", 0, 0.2f);
+
         //Fmod Instances
         footstep = FMODUnity.RuntimeManager.CreateInstance("event:/Player/Footsteps"); 
         jump = FMODUnity.RuntimeManager.CreateInstance("event:/Player/Jump");
@@ -38,7 +45,7 @@ public class PlayerMovement : MonoBehaviour
         //Fmod Parameters
         jump.setParameterByName("jumpState", 1);
         //music start
-        music.setParameterByName("chord", 0);
+        music.setParameterByName("chord", Random.Range(0, 5));
         music.start();
     }
 
@@ -50,8 +57,8 @@ public class PlayerMovement : MonoBehaviour
 
         if (state == FMOD.Studio.PLAYBACK_STATE.STOPPING || state == FMOD.Studio.PLAYBACK_STATE.STOPPED)
         {
-            music.setParameterByName("chord", Random.Range(0, 5));
             music.start();
+            music.setParameterByName("chord", Random.Range(0, 5));
         }
 
         if (Input.GetButtonDown("Fire1") && band[0])
@@ -110,7 +117,6 @@ public class PlayerMovement : MonoBehaviour
             Vector3 playerVelocity = rb.GetRelativePointVelocity(new Vector3(0.0f, 0.0f, 0.0f));           
             if(playerVelocity.y < 0) { playerVelocity.y = 0 - playerVelocity.y; }
             if(playerVelocity.y > 10) { playerVelocity.y = 10; }
-            Debug.Log(playerVelocity.y);
             jump.setParameterByName("downVelocity", playerVelocity.y);
             GetComponent<Band>().SetBandVel(playerVelocity.y);
 
@@ -158,4 +164,19 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
+    private void walking()
+    {
+        Vector3 playerVelocity = rb.GetRelativePointVelocity(new Vector3(0.0f, 0.0f, 0.0f));
+
+        if (playerVelocity.x != 0 && spriteNum == 0)
+        {
+            spr.sprite = moving;
+            spriteNum = 1;
+        }
+        else
+        {
+            spr.sprite = still;
+            spriteNum = 0;
+        }
+    }
 }
