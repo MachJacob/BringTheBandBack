@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="ParameterPreset" id="{7ac3b201-2579-48ed-be7f-5b5cf329a72b}">
+		<property name="name">
+			<value>SaxPlayer</value>
+		</property>
+		<relationship name="folder">
+			<destination>{dafc4b04-c1c1-47b1-8da0-1cb04ff5edf0}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{54aed77a-1221-4fda-8e3c-fa99df1cdf05}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{54aed77a-1221-4fda-8e3c-fa99df1cdf05}">
+		<property name="parameterType">
+			<value>1</value>
+		</property>
+		<property name="maximum">
+			<value>2</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>

@@ -135,6 +135,25 @@ public class PlayerMovement : MonoBehaviour
     public void EnableBand(int _idx)
     {
         band[_idx] = true;          //0 drums index refers to charactor
+
+        switch (_idx)
+        {
+            case 0:
+                music.setParameterByName("BassPlayer", 1);
+                break;
+            case 1:
+                music.setParameterByName("PianoPlayer", 1);
+                break;
+            case 2:
+                music.setParameterByName("GuitarPlayer", 1);
+                break;
+            case 3:
+                music.setParameterByName("Drummer", 1);
+                break;
+            case 4:
+                music.setParameterByName("SaxPlayer", 1);
+                break;
+        }
     }
 
 }

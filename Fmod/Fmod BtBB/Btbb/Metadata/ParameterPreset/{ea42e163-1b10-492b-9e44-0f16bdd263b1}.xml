@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="ParameterPreset" id="{ea42e163-1b10-492b-9e44-0f16bdd263b1}">
+		<property name="name">
+			<value>Drummer</value>
+		</property>
+		<relationship name="folder">
+			<destination>{dafc4b04-c1c1-47b1-8da0-1cb04ff5edf0}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{a94d1317-a948-41b8-9325-fc30ade81bfb}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{a94d1317-a948-41b8-9325-fc30ade81bfb}">
+		<property name="parameterType">
+			<value>1</value>
+		</property>
+		<property name="maximum">
+			<value>2</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>
