@@ -54,7 +54,7 @@ public class Chase : MonoBehaviour
             rb.AddForce(moveForce * moveSpeed);
         }
 
-        if (distance >= maxDistance)
+        if (distance <= maxDistance)
         {
             
         }
