@@ -44,6 +44,16 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
+        //music FMOD Shit
+        FMOD.Studio.PLAYBACK_STATE state;
+        music.getPlaybackState(out state);
+
+        if (state == FMOD.Studio.PLAYBACK_STATE.STOPPING || state == FMOD.Studio.PLAYBACK_STATE.STOPPED)
+        {
+            music.setParameterByName("chord", Random.Range(0, 5));
+            music.start();
+        }
+
         if (Input.GetButtonDown("Fire1") && band[0])
         {
             int dir = 1;
@@ -61,15 +71,7 @@ public class PlayerMovement : MonoBehaviour
             stick.GetComponent<SpriteRenderer>().flipX = spr.flipX;
         }
 
-        //music FMOD Shit
-        FMOD.Studio.PLAYBACK_STATE state;
-        music.getPlaybackState(out state);
-
-        if (state == FMOD.Studio.PLAYBACK_STATE.STOPPING)
-        {
-            music.setParameterByName("chord", Random.Range(0, 5));
-            music.start();
-        }
+        
     }
 
     void FixedUpdate()
