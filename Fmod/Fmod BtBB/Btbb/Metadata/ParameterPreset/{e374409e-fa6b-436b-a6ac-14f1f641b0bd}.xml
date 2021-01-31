@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="ParameterPreset" id="{e374409e-fa6b-436b-a6ac-14f1f641b0bd}">
+		<property name="name">
+			<value>AtmosOff</value>
+		</property>
+		<relationship name="folder">
+			<destination>{dafc4b04-c1c1-47b1-8da0-1cb04ff5edf0}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{a4e3df10-7e41-4f4a-83b0-32e2662e6cd7}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{a4e3df10-7e41-4f4a-83b0-32e2662e6cd7}">
+		<property name="parameterType">
+			<value>1</value>
+		</property>
+		<property name="maximum">
+			<value>2</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>
