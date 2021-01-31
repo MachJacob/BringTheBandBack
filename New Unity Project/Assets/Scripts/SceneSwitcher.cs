@@ -18,8 +18,18 @@ public class SceneSwitcher : MonoBehaviour
 
     public void QuitGame()
     {
+        FMOD.Studio.PLAYBACK_STATE state;
         Quitsound = FMODUnity.RuntimeManager.CreateInstance("event:/Player/Jump");
         Quitsound.start();
-        Application.Quit();
+        Quitsound.getPlaybackState(out state);
+        while (true)
+        {
+            Quitsound.getPlaybackState(out state);
+            if (state == FMOD.Studio.PLAYBACK_STATE.STOPPING || state == FMOD.Studio.PLAYBACK_STATE.STOPPED)
+            {
+                Application.Quit();
+            }
+        }
+        
     }
 }
