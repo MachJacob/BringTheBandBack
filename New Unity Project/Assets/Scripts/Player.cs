@@ -42,8 +42,8 @@ public class Player : MonoBehaviour
         if (health <= 0 && alive == false)
         {
             Debug.Log("You are dead............");
-            SceneManager.LoadScene("GameOver");
-            //Destroy(gameObject);
+            SceneManager.LoadScene(2);
+            Destroy(gameObject);
         }
 
         if (healthbar) //healthbar stat

@@ -3243,6 +3243,14 @@ PrefabInstance:
       propertyPath: piano
       value: 
       objectReference: {fileID: 5552899302478424365, guid: be03c56a178896042b536241ae4f27c7, type: 3}
+    - target: {fileID: 6854111078302237931, guid: 9a5bf2b5bdeb1454b94aa6de0a040a27, type: 3}
+      propertyPath: still
+      value: 
+      objectReference: {fileID: 7245173617873359384, guid: c264a2bc537e8784db1dc649c6e9e1b1, type: 3}
+    - target: {fileID: 6854111078302237931, guid: 9a5bf2b5bdeb1454b94aa6de0a040a27, type: 3}
+      propertyPath: moving
+      value: 
+      objectReference: {fileID: 556513072483727659, guid: c264a2bc537e8784db1dc649c6e9e1b1, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9a5bf2b5bdeb1454b94aa6de0a040a27, type: 3}
 --- !u!1 &1592918722
