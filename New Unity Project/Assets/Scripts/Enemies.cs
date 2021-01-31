@@ -28,7 +28,7 @@ public class Enemies : MonoBehaviour
     {
         if (enemy_health <= 0)
         {
-            Destroy(gameObject);
+            Die();
         }
     }
     public void OnCollisionEnter2D(Collision2D collision)
@@ -42,5 +42,14 @@ public class Enemies : MonoBehaviour
         {
             DealDamage(drumstickDamage);
         }
+        else if (collision.gameObject.CompareTag("Piano"))
+        {
+            Die();
+        }
+    }
+
+    private void Die()
+    {
+        Destroy(gameObject);
     }
 }
