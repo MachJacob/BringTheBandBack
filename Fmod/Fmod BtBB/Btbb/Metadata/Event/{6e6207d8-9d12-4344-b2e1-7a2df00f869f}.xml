@@ -121,6 +121,9 @@
 		<property name="start">
 			<value>1</value>
 		</property>
+		<relationship name="modulators">
+			<destination>{8b2ab60f-ebb4-4ac9-85cb-5f89e44ba7f5}</destination>
+		</relationship>
 		<relationship name="audioFile">
 			<destination>{760c13af-913d-4a83-aeb4-d47ef337a10a}</destination>
 		</relationship>
@@ -156,6 +159,14 @@
 		<relationship name="automationCurves">
 			<destination>{ac4f2fb6-ba12-48fa-99b8-2e2688f40099}</destination>
 		</relationship>
+	</object>
+	<object class="RandomizerModulator" id="{8b2ab60f-ebb4-4ac9-85cb-5f89e44ba7f5}">
+		<property name="nameOfPropertyBeingModulated">
+			<value>pitch</value>
+		</property>
+		<property name="amount">
+			<value>3.5</value>
+		</property>
 	</object>
 	<object class="MixerBusEffectChain" id="{dd3cb247-f0ec-4e1f-bbd5-4691f52cab35}">
 		<relationship name="effects">
