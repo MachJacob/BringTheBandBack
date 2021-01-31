@@ -13,7 +13,7 @@ public class RangedEnemy : MonoBehaviour
 
     private float speed;
 
-    private Transform target;
+    public Transform target;
 
     public GameObject bullet;
     private float fireRate;
@@ -38,7 +38,7 @@ public class RangedEnemy : MonoBehaviour
         //Vector2 direction = target.position - transform.position;
         //RangedRB.velocity = direction.normalized * speed;
 
-        if(Time.time > nextFire)
+        if(Time.time > nextFire && Vector2.Distance(transform.position, target.position) < 20)
         {
             Random.Range(1, 5);
             Instantiate(bullet, transform.position + transform.up * 1.5f, Quaternion.identity);
