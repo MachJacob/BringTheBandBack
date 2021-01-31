@@ -27,6 +27,8 @@ public class PlayerMovement : MonoBehaviour
 
     public GameObject drumStick; 
     public GameObject cymbol;
+    public GameObject piano;
+    private GameObject newPiano;
 
     void Start()
     {
@@ -76,6 +78,15 @@ public class PlayerMovement : MonoBehaviour
             GameObject stick = Instantiate(cymbol, transform.position + Vector3.right * dir * 1.55f, Quaternion.identity);
             stick.GetComponent<Rigidbody2D>().AddForce(Vector2.right * dir * 100);
             stick.GetComponent<SpriteRenderer>().flipX = spr.flipX;
+        }
+        if (Input.GetButtonDown("Fire3") && band[1])
+        {
+            Destroy(newPiano);
+            int dir = 1;
+            if (spr.flipX) dir = -1;
+            newPiano = Instantiate(piano, transform.position + Vector3.right * dir * 1.55f, Quaternion.identity);
+            newPiano.GetComponent<SpriteRenderer>().flipX = spr.flipX;
+            newPiano.GetComponent<BoxCollider2D>().offset = Vector2.right * -0.6f;
         }
 
         
