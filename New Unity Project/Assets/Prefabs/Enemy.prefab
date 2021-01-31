@@ -76,8 +76,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -9095717837082945937, guid: 34587324d412940a79d530020c957dc0, type: 3}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Sprite: {fileID: 2813693805288941945, guid: f3b221b832f432f47841e92119a273a3, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -137,6 +137,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerTransform: {fileID: 0}
+  enemyShooter: {fileID: 0}
   moveSpeed: 2
   moveCooldown: 1
   timer: 0
@@ -157,6 +158,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy_rigidbody: {fileID: 7787182521341860160}
+  enemy_health: 50
+  drumstickDamage: 0
+  drumStickObject: {fileID: 0}
 --- !u!114 &7145309868531912860
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -170,6 +174,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy_rigidbody: {fileID: 7787182521341860160}
+  enemy_health: 50
+  drumstickDamage: 0
+  drumStickObject: {fileID: 0}
   playersHealth: {fileID: 0}
   hitObject: {fileID: 7787182521341860158}
   damage: 20
