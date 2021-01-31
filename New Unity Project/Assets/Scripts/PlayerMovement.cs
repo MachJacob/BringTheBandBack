@@ -173,7 +173,7 @@ public class PlayerMovement : MonoBehaviour
             spr.sprite = moving;
             spriteNum = 1;
         }
-        else
+        else if(spriteNum == 1)
         {
             spr.sprite = still;
             spriteNum = 0;

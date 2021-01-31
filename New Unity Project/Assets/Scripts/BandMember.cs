@@ -12,16 +12,30 @@ public class BandMember : MonoBehaviour
 
     FMOD.Studio.EventInstance jump;
 
+    //walking
+    private SpriteRenderer spr;
+    public Sprite still;
+    public Sprite moving;
+    public Rigidbody2D player;
+    bool playerAttached = false;
+    int spriteNum = 0;
+
     private float velocity;
 
     // Start is called before the first frame update
     void Start()
     {
+        
+
         //Fmod Instances
         jump = FMODUnity.RuntimeManager.CreateInstance("event:/Player/Jump");
 
         //Fmod Parameters
         jump.setParameterByName("jumpState", 0);
+
+        //walking annimation
+        spr = GetComponent<SpriteRenderer>();
+        InvokeRepeating("walking", 0, 0.2f);
 
     }
 
@@ -42,7 +56,6 @@ public class BandMember : MonoBehaviour
 
             if (velocity < 0) { velocity = 0 - velocity; }
             if (velocity > 10) { velocity = 10; }
-            Debug.Log(velocity);
             jump.setParameterByName("downVelocity", velocity);
             jump.setParameterByName("jumpState", 0);
             jump.start();
@@ -57,6 +70,8 @@ public class BandMember : MonoBehaviour
             collision.GetComponent<PlayerMovement>().EnableBand(mem);
 
             Destroy(GetComponent<Collider2D>());
+
+            playerAttached = true;
         }
     }
 
@@ -72,5 +87,25 @@ public class BandMember : MonoBehaviour
     public void SetVel(float _vel)
     {
         velocity = _vel;
+    }
+
+    private void walking()
+    {
+        Vector3 playerVelocity = player.GetRelativePointVelocity(new Vector3(0.0f, 0.0f, 0.0f));
+
+        if(player != null)
+        {
+            if (playerVelocity.x != 0 && spriteNum == 0 && playerAttached == true)
+            {
+                spr.sprite = moving;
+                spriteNum = 1;
+            }
+            else if(spriteNum == 1)
+            {
+                spr.sprite = still;
+                spriteNum = 0;
+            }
+        }
+        
     }
 }
