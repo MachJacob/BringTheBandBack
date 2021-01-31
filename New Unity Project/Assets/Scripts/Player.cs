@@ -39,9 +39,12 @@ public class Player : MonoBehaviour
     {
         //Update for player stats & stuff
 
-
-
-
+        if (health <= 0 && alive == false)
+        {
+            Debug.Log("You are dead............");
+            SceneManager.LoadScene("GameOver");
+            //Destroy(gameObject);
+        }
 
         if (healthbar) //healthbar stat
         {

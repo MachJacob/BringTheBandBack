@@ -143,6 +143,8 @@ MonoBehaviour:
   platformLayerMask:
     serializedVersion: 2
     m_Bits: 64
+  still: {fileID: 7245173617873359384, guid: c264a2bc537e8784db1dc649c6e9e1b1, type: 3}
+  moving: {fileID: 556513072483727659, guid: c264a2bc537e8784db1dc649c6e9e1b1, type: 3}
   drumStick: {fileID: 4965747568187815844, guid: 83aae30b9849d764bb70e20e483746ab, type: 3}
   cymbol: {fileID: 4978499861104575331, guid: adf38498e05261f43badb7935ae1b5d5, type: 3}
 --- !u!114 &5369038940681033969
