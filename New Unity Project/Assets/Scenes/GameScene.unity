@@ -141,11 +141,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1415168892587819528, guid: 0dce06178c4cded49a8a36c64aaebc39, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 110.85782
+      value: 45.76
       objectReference: {fileID: 0}
     - target: {fileID: 1415168892587819528, guid: 0dce06178c4cded49a8a36c64aaebc39, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 12.873192
+      value: 16.27
       objectReference: {fileID: 0}
     - target: {fileID: 1415168892587819528, guid: 0dce06178c4cded49a8a36c64aaebc39, type: 3}
       propertyPath: m_LocalPosition.z
@@ -5413,7 +5413,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 1
-      m_TileSpriteIndex: 1
+      m_TileSpriteIndex: 16
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -22944,26 +22944,6 @@ Tilemap:
       serializedVersion: 2
       m_TileIndex: 12
       m_TileSpriteIndex: 12
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
-  - first: {x: 65, y: 27, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 16
-      m_TileSpriteIndex: 16
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
-  - first: {x: 70, y: 27, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 16
-      m_TileSpriteIndex: 16
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -46093,8 +46073,8 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: 36c54260b4dbefa4390194b27c759889, type: 2}
   - m_RefCount: 42
     m_Data: {fileID: 11400000, guid: 50c6d594de291e640aa816fbde0bc881, type: 2}
-  - m_RefCount: 2
-    m_Data: {fileID: 11400000, guid: 7d31a18fc3b98c04788e1d6dc9e8ec76, type: 2}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   - m_RefCount: 14
     m_Data: {fileID: 11400000, guid: e1685bdadff78c64087a9cd815fe3b40, type: 2}
   - m_RefCount: 7
@@ -46130,8 +46110,8 @@ Tilemap:
   m_TileSpriteArray:
   - m_RefCount: 53
     m_Data: {fileID: 21300000, guid: 20cb1b1adae6cf642a69809f486eb0ec, type: 3}
-  - m_RefCount: 1
-    m_Data: {fileID: 8393943516641041922, guid: 851361d3c76e6f64ba4195b388eae5f8, type: 3}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   - m_RefCount: 30
     m_Data: {fileID: 21300000, guid: d1c58c49fc44d0747b9e1998683750ff, type: 3}
   - m_RefCount: 701
@@ -46160,8 +46140,8 @@ Tilemap:
     m_Data: {fileID: -68223042443166802, guid: 851361d3c76e6f64ba4195b388eae5f8, type: 3}
   - m_RefCount: 42
     m_Data: {fileID: 4422695527691430334, guid: 851361d3c76e6f64ba4195b388eae5f8, type: 3}
-  - m_RefCount: 2
-    m_Data: {fileID: -6364774785671028987, guid: 851361d3c76e6f64ba4195b388eae5f8, type: 3}
+  - m_RefCount: 1
+    m_Data: {fileID: 8393943516641041922, guid: 851361d3c76e6f64ba4195b388eae5f8, type: 3}
   - m_RefCount: 14
     m_Data: {fileID: -380075668297676294, guid: 851361d3c76e6f64ba4195b388eae5f8, type: 3}
   - m_RefCount: 7
@@ -46195,7 +46175,7 @@ Tilemap:
   - m_RefCount: 4
     m_Data: {fileID: 1053483429703117400, guid: 76958f62b71807d45b80a7650af6e21a, type: 3}
   m_TileMatrixArray:
-  - m_RefCount: 4493
+  - m_RefCount: 4491
     m_Data:
       e00: 1
       e01: 0
@@ -46214,7 +46194,7 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 4493
+  - m_RefCount: 4491
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
@@ -47573,6 +47553,10 @@ PrefabInstance:
       propertyPath: m_GravityScale
       value: 2.8
       objectReference: {fileID: 0}
+    - target: {fileID: 6854111078302237931, guid: 9a5bf2b5bdeb1454b94aa6de0a040a27, type: 3}
+      propertyPath: piano
+      value: 
+      objectReference: {fileID: 5552899302478424365, guid: be03c56a178896042b536241ae4f27c7, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9a5bf2b5bdeb1454b94aa6de0a040a27, type: 3}
 --- !u!4 &1142541259 stripped
