@@ -5,7 +5,7 @@ using UnityEngine;
 public class MeleeEnemy : Enemies
 {
     public GameObject playersHealth;
-    public GameObject hitObject;
+    //public GameObject hitObject;
 
     public float damage = 20.0f;
     private float minAttackDistance;
