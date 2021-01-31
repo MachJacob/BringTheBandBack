@@ -20,6 +20,7 @@ public class PlayerMovement : MonoBehaviour
     FMOD.Studio.EventInstance footstep;
     FMOD.Studio.EventInstance jump;
     FMOD.Studio.EventInstance music;
+    FMOD.Studio.EventInstance atmos;
 
     public Sprite still;
     public Sprite moving;
@@ -46,11 +47,14 @@ public class PlayerMovement : MonoBehaviour
         footstep = FMODUnity.RuntimeManager.CreateInstance("event:/Player/Footsteps"); 
         jump = FMODUnity.RuntimeManager.CreateInstance("event:/Player/Jump");
         music = FMODUnity.RuntimeManager.CreateInstance("event:/Music/MusicRandom");
+        atmos = FMODUnity.RuntimeManager.CreateInstance("event:/Atmos/Haunting");
         //Fmod Parameters
         jump.setParameterByName("jumpState", 1);
         //music start
         music.setParameterByName("chord", Random.Range(0, 5));
         music.start();
+        //atmos start
+        atmos.start();
     }
 
     private void Update()
@@ -193,6 +197,14 @@ public class PlayerMovement : MonoBehaviour
         {
             spr.sprite = still;
             spriteNum = 0;
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.gameObject.CompareTag("Coins"))
+        {
+            Destroy(collision.gameObject);
         }
     }
 }

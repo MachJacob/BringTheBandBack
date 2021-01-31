@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Enemy
   - Drumstick
+  - Coins
   layers:
   - Default
   - TransparentFX

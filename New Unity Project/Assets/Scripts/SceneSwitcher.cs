@@ -6,14 +6,30 @@ using UnityEngine.SceneManagement;
 
 public class SceneSwitcher : MonoBehaviour
 {
-
+    FMOD.Studio.EventInstance Loadsound;
+    FMOD.Studio.EventInstance Quitsound;
+    
     public void LoadScene(string sceneName)
     {
+        Loadsound = FMODUnity.RuntimeManager.CreateInstance("event:/UI/Play");
+        Loadsound.start();
         SceneManager.LoadScene(sceneName);
     }
 
     public void QuitGame()
     {
-        Application.Quit();
+        FMOD.Studio.PLAYBACK_STATE state;
+        Quitsound = FMODUnity.RuntimeManager.CreateInstance("event:/Player/Jump");
+        Quitsound.start();
+        Quitsound.getPlaybackState(out state);
+        while (true)
+        {
+            Quitsound.getPlaybackState(out state);
+            if (state == FMOD.Studio.PLAYBACK_STATE.STOPPING || state == FMOD.Studio.PLAYBACK_STATE.STOPPED)
+            {
+                Application.Quit();
+            }
+        }
+        
     }
 }
