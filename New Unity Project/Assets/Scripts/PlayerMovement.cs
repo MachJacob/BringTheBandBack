@@ -195,4 +195,12 @@ public class PlayerMovement : MonoBehaviour
             spriteNum = 0;
         }
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.gameObject.CompareTag("Coins"))
+        {
+            Destroy(collision.gameObject);
+        }
+    }
 }
