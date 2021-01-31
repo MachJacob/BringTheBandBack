@@ -174,7 +174,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playersHealth: {fileID: 0}
-  damage: 20
+  damage: 25
   rangedGameobject:
   - {fileID: 2012993297485625001, guid: f540195fa5379084c9daff329b42467d, type: 3}
   - {fileID: 0}

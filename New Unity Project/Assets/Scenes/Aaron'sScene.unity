@@ -1368,6 +1368,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RangedEnemy
       objectReference: {fileID: 0}
+    - target: {fileID: 735565309553149255, guid: 352e53aa2865fa6458848b41a128ea22, type: 3}
+      propertyPath: playerTransform
+      value: 
+      objectReference: {fileID: 2067607140}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 352e53aa2865fa6458848b41a128ea22, type: 3}
 --- !u!1 &1917483839 stripped
