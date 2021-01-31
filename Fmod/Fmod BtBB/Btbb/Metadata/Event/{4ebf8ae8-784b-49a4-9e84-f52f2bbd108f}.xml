@@ -122,6 +122,9 @@
 		<property name="start">
 			<value>1</value>
 		</property>
+		<property name="volume">
+			<value>-4.5</value>
+		</property>
 		<relationship name="parameters">
 			<destination>{2d542e17-8aa1-415c-b4ab-747bfd3b2ad0}</destination>
 		</relationship>
