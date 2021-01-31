@@ -30,7 +30,7 @@ public class BandMember : MonoBehaviour
 
         //Fmod Instances
         jump = FMODUnity.RuntimeManager.CreateInstance("event:/Player/Jump");
-        jump = FMODUnity.RuntimeManager.CreateInstance("event:/Player/Footstep");
+        jump = FMODUnity.RuntimeManager.CreateInstance("event:/Player/Footsteps");
 
         //Fmod Parameters
         jump.setParameterByName("jumpState", 0);
