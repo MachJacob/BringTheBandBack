@@ -207,6 +207,7 @@ public class PlayerMovement : MonoBehaviour
         }
         else if(spriteNum == 1)
         {
+            footstep.start();
             spr.sprite = still;
             spriteNum = 0;
         }

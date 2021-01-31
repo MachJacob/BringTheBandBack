@@ -11,6 +11,7 @@ public class BandMember : MonoBehaviour
     bool inAir = false;
 
     FMOD.Studio.EventInstance jump;
+    FMOD.Studio.EventInstance footstep;
 
     //walking
     private SpriteRenderer spr;
@@ -29,6 +30,7 @@ public class BandMember : MonoBehaviour
 
         //Fmod Instances
         jump = FMODUnity.RuntimeManager.CreateInstance("event:/Player/Jump");
+        jump = FMODUnity.RuntimeManager.CreateInstance("event:/Player/Footstep");
 
         //Fmod Parameters
         jump.setParameterByName("jumpState", 0);
@@ -102,6 +104,7 @@ public class BandMember : MonoBehaviour
             }
             else if(spriteNum == 1)
             {
+                footstep.start();
                 spr.sprite = still;
                 spriteNum = 0;
             }
