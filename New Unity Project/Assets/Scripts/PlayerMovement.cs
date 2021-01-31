@@ -30,6 +30,8 @@ public class PlayerMovement : MonoBehaviour
     public GameObject piano;
     private GameObject newPiano;
 
+    private bool dubJump;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -100,8 +102,9 @@ public class PlayerMovement : MonoBehaviour
 
         rb.velocity = Vector3.SmoothDamp(rb.velocity, targetVel, ref vel, smoothTime);  //smooth movement
 
-        if (Input.GetAxis("Jump") > 0 && IsGrounded())
+        if (Input.GetButtonDown("Jump") && (IsGrounded() || (dubJump == false && band[4])))
         {
+            dubJump = !IsGrounded();
             rb.velocity = new Vector2(rb.velocity.x, jumpVel);
 
             jump.setParameterByName("jumpState", 1);
@@ -122,7 +125,7 @@ public class PlayerMovement : MonoBehaviour
             inAir = true;
         }
 
-        if(IsGrounded() && inAir)
+        if((IsGrounded() && inAir))
         {
             //getting velocity
             Vector3 playerVelocity = rb.GetRelativePointVelocity(new Vector3(0.0f, 0.0f, 0.0f));           
@@ -135,6 +138,8 @@ public class PlayerMovement : MonoBehaviour
             jump.setParameterByName("jumpState", 0);
             jump.start();
             footstep.start();
+
+            dubJump = false;
         }
     }
 
