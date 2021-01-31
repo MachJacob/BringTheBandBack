@@ -33,6 +33,8 @@ public class PlayerMovement : MonoBehaviour
 
     private bool dubJump;
 
+    private float doJump = 0;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -55,6 +57,8 @@ public class PlayerMovement : MonoBehaviour
         music.start();
         //atmos start
         atmos.start();
+
+        dubJump = false;
     }
 
     private void Update()
@@ -94,6 +98,11 @@ public class PlayerMovement : MonoBehaviour
             newPiano.GetComponent<SpriteRenderer>().flipX = spr.flipX;
             newPiano.GetComponent<BoxCollider2D>().offset = Vector2.right * -0.6f;
         }
+        if (Input.GetButtonDown("Jump"))
+        {
+            doJump = 0.25f;
+        }
+        doJump -= Time.deltaTime;
 
         
     }
@@ -106,13 +115,16 @@ public class PlayerMovement : MonoBehaviour
 
         rb.velocity = Vector3.SmoothDamp(rb.velocity, targetVel, ref vel, smoothTime);  //smooth movement
 
-        if (Input.GetButtonDown("Jump") && (IsGrounded() || (dubJump == false && band[4])))
+        if (doJump > 0 && (IsGrounded() || (band[4] && !dubJump)))
         {
+            
             dubJump = !IsGrounded();
             rb.velocity = new Vector2(rb.velocity.x, jumpVel);
 
             jump.setParameterByName("jumpState", 1);
             jump.start();
+            doJump = 0;
+          
         }
 
         if (rb.velocity.x > 0.1)    //change direction if moving
