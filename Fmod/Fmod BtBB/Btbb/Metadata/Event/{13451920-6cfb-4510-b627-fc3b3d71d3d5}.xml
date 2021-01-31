@@ -5,7 +5,7 @@
 			<value>Haunting</value>
 		</property>
 		<property name="outputFormat">
-			<value>0</value>
+			<value>1</value>
 		</property>
 		<relationship name="folder">
 			<destination>{db96bb32-803b-4062-8ce1-36509fb22c94}</destination>
@@ -59,11 +59,17 @@
 	<object class="EventAutomatableProperties" id="{5516968a-8233-4d68-9929-cccfc30a7bdb}" />
 	<object class="MarkerTrack" id="{18488217-3194-45f7-bdeb-a968dd84d619}" />
 	<object class="GroupTrack" id="{01676b22-d801-4404-bc88-ed21c1242a6c}">
+		<relationship name="modules">
+			<destination>{1e8c35ac-4c7c-43f5-8f25-ae3feb32c73a}</destination>
+		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{147cfc96-c992-47fc-8cba-56bdc8d3060e}</destination>
 		</relationship>
 	</object>
 	<object class="Timeline" id="{3e37531f-e50d-4438-8652-503667758284}">
+		<relationship name="modules">
+			<destination>{1e8c35ac-4c7c-43f5-8f25-ae3feb32c73a}</destination>
+		</relationship>
 		<relationship name="markers">
 			<destination>{a1f6350a-fc13-44fc-8f86-f5c552c9b012}</destination>
 		</relationship>
@@ -85,7 +91,18 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{76862fa0-72fc-49e4-b117-5fe392200228}" />
+	<object class="SingleSound" id="{1e8c35ac-4c7c-43f5-8f25-ae3feb32c73a}">
+		<property name="length">
+			<value>44.22930208333333</value>
+		</property>
+		<relationship name="audioFile">
+			<destination>{d2c5b0f1-20d7-4ca7-9cef-fa6c669ae1a0}</destination>
+		</relationship>
+	</object>
 	<object class="EventMixerGroup" id="{147cfc96-c992-47fc-8cba-56bdc8d3060e}">
+		<property name="volume">
+			<value>-14</value>
+		</property>
 		<property name="name">
 			<value>Audio 1</value>
 		</property>
@@ -101,10 +118,10 @@
 	</object>
 	<object class="LoopRegion" id="{a1f6350a-fc13-44fc-8f86-f5c552c9b012}">
 		<property name="position">
-			<value>1.9876325088339224</value>
+			<value>0</value>
 		</property>
 		<property name="length">
-			<value>62.012367491166074</value>
+			<value>44.232675771370765</value>
 		</property>
 		<relationship name="timeline">
 			<destination>{3e37531f-e50d-4438-8652-503667758284}</destination>
