@@ -73,7 +73,7 @@ public class PlayerMovement : MonoBehaviour
             music.setParameterByName("chord", Random.Range(0, 5));
         }
 
-        if (Input.GetButtonDown("Fire1") && band[0])
+        if (Input.GetButtonDown("Fire1") && band[3])
         {
             int dir = 1;
             if (spr.flipX) dir = -1;
@@ -81,7 +81,7 @@ public class PlayerMovement : MonoBehaviour
             stick.GetComponent<Rigidbody2D>().AddForce(Vector2.right * dir * 100);
             stick.GetComponent<SpriteRenderer>().flipX = spr.flipX;
         }
-        if (Input.GetButtonDown("Fire2") && band[0])
+        if (Input.GetButtonDown("Fire2") && band[3])
         {
             int dir = 1;
             if (spr.flipX) dir = -1;
