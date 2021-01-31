@@ -14,12 +14,14 @@ public class Player : MonoBehaviour
     public HealthBar healthbar;
 
     FMOD.Studio.EventInstance damageTaken;
+    FMOD.Studio.EventInstance deathSound;
 
     void Start()
     {
         health = maxHealth;
         alive = true;
         damageTaken = FMODUnity.RuntimeManager.CreateInstance("event:/Player/Damage");
+        deathSound = FMODUnity.RuntimeManager.CreateInstance("event:/Player/Death");
     }
 
     public void DealDamage(float damage)
@@ -42,6 +44,7 @@ public class Player : MonoBehaviour
         if (health <= 0 && alive == false)
         {
             Debug.Log("You are dead............");
+            deathSound.start();
             SceneManager.LoadScene(2);
             Destroy(gameObject);
         }
