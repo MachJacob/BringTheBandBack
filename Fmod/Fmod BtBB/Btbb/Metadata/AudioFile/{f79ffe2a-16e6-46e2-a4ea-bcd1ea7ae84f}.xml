@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.01.00">
-	<object class="AudioFile" id="{bd5ae48c-e3f4-4b43-89d3-1db531e7cc03}">
+	<object class="AudioFile" id="{f79ffe2a-16e6-46e2-a4ea-bcd1ea7ae84f}">
 		<property name="assetPath">
-			<value>SW001_8-Bit-Games-187_Pickup_Coin.wav</value>
+			<value>Death.wav</value>
 		</property>
 		<property name="frequencyInKHz">
-			<value>48</value>
+			<value>96</value>
 		</property>
 		<property name="channelCount">
 			<value>1</value>
 		</property>
 		<property name="length">
-			<value>0.42166666666666669</value>
+			<value>1.29209375</value>
 		</property>
 		<relationship name="masterAssetFolder">
 			<destination>{b9f2c506-ec67-4e18-883c-361cd858d0ee}</destination>
