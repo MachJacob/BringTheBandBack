@@ -6,6 +6,14 @@ public class Bullet : MonoBehaviour
 {
     public GameObject playersHealth;
 
+    public Sprite sprite1;
+    public Sprite sprite2;
+    public Sprite sprite3;
+    public Sprite sprite4;
+    public Sprite sprite5;
+    private SpriteRenderer spr;
+    int spriteNum = 1;
+
     public float moveSpeed;
 
     Rigidbody2D rb;
@@ -20,6 +28,8 @@ public class Bullet : MonoBehaviour
 
     void Start()
     {
+        spr = GetComponent<SpriteRenderer>();
+
         bullet = FMODUnity.RuntimeManager.CreateInstance("event:/Enemy2/Bullet");
         bullet.setParameterByName("BulletHit", 0);
         bullet.start();
@@ -28,6 +38,12 @@ public class Bullet : MonoBehaviour
         target = GameObject.FindObjectOfType<Player>();
         moveDirection = (target.transform.position - transform.position).normalized * moveSpeed;
         rb.velocity = new Vector2(moveDirection.x, moveDirection.y);
+
+        if (rb.velocity.x < 0)
+        {
+            spr.flipX = true;
+        }
+
         //rb.velocity = moveDirection.normalized;
         Destroy(gameObject, 4f);
     }
@@ -66,6 +82,29 @@ public class Bullet : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
+        switch(spriteNum){
+            case 1:
+                spr.sprite = sprite1;
+                spriteNum++;
+                break;
+            case 2:
+                spr.sprite = sprite2;
+                spriteNum++;
+                break;
+            case 3:
+                spr.sprite = sprite3;
+                spriteNum++;
+                break;
+            case 4:
+                spr.sprite = sprite4;
+                spriteNum++;
+                break;
+            case 5:
+                spr.sprite = sprite5;
+                spriteNum = 1;
+                break;
+        }
+
     }
 }

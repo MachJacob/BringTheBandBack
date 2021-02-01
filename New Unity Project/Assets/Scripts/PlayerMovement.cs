@@ -63,7 +63,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
-        //music FMOD Shit
+        //music FMOD 
         FMOD.Studio.PLAYBACK_STATE state;
         music.getPlaybackState(out state);
 

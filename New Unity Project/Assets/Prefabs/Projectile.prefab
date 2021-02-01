@@ -120,6 +120,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playersHealth: {fileID: 6854111078302237928, guid: 9a5bf2b5bdeb1454b94aa6de0a040a27, type: 3}
+  sprite1: {fileID: 5291331879659975912, guid: 56b8ad9fd82ba6448a2d1bd569aadf2e, type: 3}
+  sprite2: {fileID: -3350615558213167081, guid: 56b8ad9fd82ba6448a2d1bd569aadf2e, type: 3}
+  sprite3: {fileID: -8808250504952052848, guid: 56b8ad9fd82ba6448a2d1bd569aadf2e, type: 3}
+  sprite4: {fileID: 6713058213208765647, guid: 56b8ad9fd82ba6448a2d1bd569aadf2e, type: 3}
+  sprite5: {fileID: 6713058213208765647, guid: 56b8ad9fd82ba6448a2d1bd569aadf2e, type: 3}
+  sprite6: {fileID: 0}
   moveSpeed: 3
   damage: 30
 --- !u!61 &1238244669119617869
