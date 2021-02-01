@@ -12,6 +12,7 @@ public class Enemies : MonoBehaviour
     //public float walking_distance = 10.0f;
 
     public GameObject drumStickObject;
+    public GameObject PianoObject;
 
     void Start()
     {

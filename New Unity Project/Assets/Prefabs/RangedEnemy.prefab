@@ -161,6 +161,7 @@ MonoBehaviour:
   enemy_health: 60
   drumstickDamage: 10
   drumStickObject: {fileID: 4965747568187815844, guid: 83aae30b9849d764bb70e20e483746ab, type: 3}
+  PianoObject: {fileID: 5552899302478424365, guid: be03c56a178896042b536241ae4f27c7, type: 3}
 --- !u!114 &-2933962001217490358
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -179,4 +180,5 @@ MonoBehaviour:
   - {fileID: 2012993297485625001, guid: f540195fa5379084c9daff329b42467d, type: 3}
   - {fileID: 0}
   - {fileID: 0}
+  target: {fileID: 0}
   bullet: {fileID: 2012993297485625001, guid: f540195fa5379084c9daff329b42467d, type: 3}
