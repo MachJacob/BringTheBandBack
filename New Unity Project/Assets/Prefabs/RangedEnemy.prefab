@@ -137,13 +137,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerTransform: {fileID: 0}
-  enemyShooter: {fileID: 0}
-  moveSpeed: 0.5
+  enemyShooter: {fileID: 735565309553149254}
+  moveSpeed: 1.25
   moveCooldown: 1
   timer: 0
   rotationSpeed: 5
-  maxDistance: 5
-  minDistance: 1
+  maxDistance: 1000
+  minDistance: 0.5
   rb: {fileID: 735565309553149240}
 --- !u!114 &6259542501794118496
 MonoBehaviour:
