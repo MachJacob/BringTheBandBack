@@ -118,7 +118,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 11
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -177,7 +177,7 @@ MonoBehaviour:
   enemy_rigidbody: {fileID: 0}
   enemy_health: 50
   drumstickDamage: 0
-  drumStickObject: {fileID: 0}
-  PianoObject: {fileID: 0}
+  drumStickObject: {fileID: 4965747568187815844, guid: 83aae30b9849d764bb70e20e483746ab, type: 3}
+  PianoObject: {fileID: 5552899302478424365, guid: be03c56a178896042b536241ae4f27c7, type: 3}
   playersHealth: {fileID: 0}
   damage: 20
