@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class ScoreManager : MonoBehaviour
 {
     public static ScoreManager instance;
+    public GameObject playersHealth;
     public Text text;
     int score;
 
@@ -21,6 +22,12 @@ public class ScoreManager : MonoBehaviour
     {
         score += coinValue;
         text.text = "" + score.ToString();
+
+        if ((score == 8) || (score == 16) || (score == 24) || (score == 32) && playersHealth.GetComponent<Player>().health != 100)
+        {
+            playersHealth.GetComponent<Player>().GainHealth(20);
+        }
+
     }
 }
 

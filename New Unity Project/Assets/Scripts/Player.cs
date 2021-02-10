@@ -37,6 +37,11 @@ public class Player : MonoBehaviour
         }
     }
 
+    public void GainHealth(float healthUP)
+    {
+        health += healthUP;
+    }
+
     public void Update()
     {
         //Update for player stats & stuff
@@ -53,6 +58,5 @@ public class Player : MonoBehaviour
         {
             healthbar.fill = health / maxHealth;
         }
-
     }
 }
