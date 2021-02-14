@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{278ded30-81bf-4a12-85cd-8657d95a335d}">
+		<property name="assetPath">
+			<value>GuitarPluck.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>0.49922902494331067</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{15ef7319-2b71-4f77-a013-f95522cc3a43}</destination>
+		</relationship>
+	</object>
+</objects>
