@@ -269,17 +269,25 @@ PrefabInstance:
       propertyPath: playersHealth
       value: 
       objectReference: {fileID: 997309873}
+    - target: {fileID: 7562671148325402905, guid: fba1323f72d5b0542ab70ac571fd21d7, type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7562671148325402905, guid: fba1323f72d5b0542ab70ac571fd21d7, type: 3}
+      propertyPath: m_GravityScale
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7562671148325402906, guid: fba1323f72d5b0542ab70ac571fd21d7, type: 3}
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7562671148325402906, guid: fba1323f72d5b0542ab70ac571fd21d7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 33.2
+      value: 37.5
       objectReference: {fileID: 0}
     - target: {fileID: 7562671148325402906, guid: fba1323f72d5b0542ab70ac571fd21d7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.98
+      value: -3.01
       objectReference: {fileID: 0}
     - target: {fileID: 7562671148325402906, guid: fba1323f72d5b0542ab70ac571fd21d7, type: 3}
       propertyPath: m_LocalPosition.z
