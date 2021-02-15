@@ -18,6 +18,8 @@ public class Chase : MonoBehaviour
     public float maxDistance = 10.0f;
     public float minDistance = 1.0f;
 
+    private float gravity = 12.0f;
+
     public Rigidbody2D rb;
     private Vector2 movement;
 
@@ -49,9 +51,24 @@ public class Chase : MonoBehaviour
         if (distance >= minDistance && Vector2.Distance(transform.position, playerTransform.position) < 15)
         {
             Vector3 moveForce = playerTransform.transform.position - transform.position;
-            rb.MovePosition(Vector2.MoveTowards(transform.position, playerTransform.transform.position * Vector2.right, moveSpeed * Time.deltaTime));
+            moveForce.y = 0;
+            rb.MovePosition(Vector2.MoveTowards(transform.position, new Vector2(playerTransform.position.x, transform.position.y) - Vector2.up * Vector2.right, moveSpeed * Time.deltaTime));
+            
             moveForce.Normalize();
             rb.AddForce(moveForce * moveSpeed);
+
+            //if (transform.position.y >= moveForce.y)
+            //{
+                  //playerTransform.transform.position * -Vector2.up.x, moveSpeed
+            //    transform.position = Vector2.MoveTowards(transform.position, new Vector2(playerTransform.position.x, transform.position.y), moveSpeed * Time.deltaTime);
+            //}
+
+            //if (transform.position.y <= 2.75f)
+            //{
+            //     //transform.position = new Vector3(0.0f, -2.0f, 0.0f);
+            //    //rb.AddForce(new Vector2(0, transform.up.y / gravity), ForceMode2D.Impulse);
+            //}
+
         }
 
         if (distance <= maxDistance)
