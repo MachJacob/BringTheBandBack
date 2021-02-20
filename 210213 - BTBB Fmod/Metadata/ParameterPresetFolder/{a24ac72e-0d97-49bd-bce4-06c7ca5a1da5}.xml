@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="ParameterPresetFolder" id="{a24ac72e-0d97-49bd-bce4-06c7ca5a1da5}">
+		<property name="name">
+			<value>Band Parameters</value>
+		</property>
+		<relationship name="folder">
+			<destination>{e8bb723e-7933-48d9-889c-461dbc1e6ecd}</destination>
+		</relationship>
+	</object>
+</objects>

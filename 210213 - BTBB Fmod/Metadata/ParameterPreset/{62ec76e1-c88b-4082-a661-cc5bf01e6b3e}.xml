@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="ParameterPreset" id="{62ec76e1-c88b-4082-a661-cc5bf01e6b3e}">
+		<property name="name">
+			<value>Drunner</value>
+		</property>
+		<relationship name="folder">
+			<destination>{e8bb723e-7933-48d9-889c-461dbc1e6ecd}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{f9d0903d-91d8-4693-aadb-622e24fab04f}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{f9d0903d-91d8-4693-aadb-622e24fab04f}">
+		<property name="parameterType">
+			<value>2</value>
+		</property>
+		<property name="maximum">
+			<value>2</value>
+		</property>
+		<property name="enumerationLabels">
+			<value>off</value>
+			<value>on</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>

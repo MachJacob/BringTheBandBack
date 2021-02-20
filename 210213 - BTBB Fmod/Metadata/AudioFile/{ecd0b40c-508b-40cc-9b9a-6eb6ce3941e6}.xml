@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{ecd0b40c-508b-40cc-9b9a-6eb6ce3941e6}">
+		<property name="assetPath">
+			<value>SBJ3_Style1_80bpm_G7(13)_PIANO_2bar.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>6</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{15ef7319-2b71-4f77-a013-f95522cc3a43}</destination>
+		</relationship>
+	</object>
+</objects>

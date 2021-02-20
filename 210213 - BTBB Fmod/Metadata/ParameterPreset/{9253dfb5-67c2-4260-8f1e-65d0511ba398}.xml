@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="ParameterPreset" id="{9253dfb5-67c2-4260-8f1e-65d0511ba398}">
+		<property name="name">
+			<value>Chord</value>
+		</property>
+		<relationship name="folder">
+			<destination>{e8bb723e-7933-48d9-889c-461dbc1e6ecd}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{af05adbf-0445-45d9-ad31-fa2c614fea56}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{af05adbf-0445-45d9-ad31-fa2c614fea56}">
+		<property name="parameterType">
+			<value>2</value>
+		</property>
+		<property name="maximum">
+			<value>6</value>
+		</property>
+		<property name="enumerationLabels">
+			<value>A7</value>
+			<value>Amaj7</value>
+			<value>C7sus</value>
+			<value>Cmaj7</value>
+			<value>G7</value>
+			<value>Gmaj7</value>
+		</property>
+		<property name="isGlobal">
+			<value>true</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+		<property name="isExposedRecursively">
+			<value>false</value>
+		</property>
+	</object>
+</objects>
