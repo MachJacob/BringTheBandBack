@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="ParameterPreset" id="{34a1fa29-bd1f-4e76-ba47-1edede2d7a8c}">
+		<property name="name">
+			<value>StickCollision</value>
+		</property>
+		<relationship name="folder">
+			<destination>{e8bb723e-7933-48d9-889c-461dbc1e6ecd}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{4bea31d1-8d32-4a2c-a931-821854973340}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{4bea31d1-8d32-4a2c-a931-821854973340}">
+		<property name="parameterType">
+			<value>2</value>
+		</property>
+		<property name="maximum">
+			<value>2</value>
+		</property>
+		<property name="enumerationLabels">
+			<value>Enemy</value>
+			<value>Enviroment</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>

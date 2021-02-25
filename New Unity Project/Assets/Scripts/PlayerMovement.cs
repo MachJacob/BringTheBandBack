@@ -49,7 +49,7 @@ public class PlayerMovement : MonoBehaviour
         footstep = FMODUnity.RuntimeManager.CreateInstance("event:/Player/Footsteps"); 
         jump = FMODUnity.RuntimeManager.CreateInstance("event:/Player/Jump");
         music = FMODUnity.RuntimeManager.CreateInstance("event:/Music/MusicRandom");
-        atmos = FMODUnity.RuntimeManager.CreateInstance("event:/Atmos/Haunting");
+        atmos = FMODUnity.RuntimeManager.CreateInstance("event:/Enviroment/Atmos/Haunting");
         //Fmod Parameters
         jump.setParameterByName("jumpState", 1);
         //music start

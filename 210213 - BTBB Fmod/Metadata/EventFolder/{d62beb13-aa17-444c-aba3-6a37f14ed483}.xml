@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="EventFolder" id="{d62beb13-aa17-444c-aba3-6a37f14ed483}">
+		<property name="name">
+			<value>Drumsticks</value>
+		</property>
+		<relationship name="folder">
+			<destination>{6c3c464c-e695-40de-8e97-d07c7825efba}</destination>
+		</relationship>
+	</object>
+</objects>
